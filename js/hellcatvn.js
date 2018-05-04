@@ -367,12 +367,15 @@ if (!NexT.utils.isMobile()) {
   };
 
   var backTo = $(".back-to-top");
+  var sidebarAffix = $(".sidebar-inner");
   var backHeight = $(window).height() - 980 + "px";
   $(window).scroll(function() {
     if ($(window).scrollTop() > 700 && backTo.css("top") === "-900px") {
       backTo.css("top", backHeight);
+      sidebarAffix.attr("class", "sidebar-inner affix");
     } else if ($(window).scrollTop() <= 700 && backTo.css("top") !== "-900px") {
       backTo.css("top", "-900px");
+      sidebarAffix.attr("class", "sidebar-inner affix-top");
     }
   });
 

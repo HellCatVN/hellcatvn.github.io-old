@@ -14,6 +14,8 @@
     
       <link rel="stylesheet" href="/css/main.css">
     
+      <link rel="stylesheet" href="/css/share.min.css">
+    
   
   <link href="https://fonts.loli.net/css?family=Sigmar One:300,300italic,400,400italic,700,700italic&amp;subset=latin,latin-ext"
         rel="stylesheet" type="text/css">
@@ -110,7 +112,7 @@
                   </form>
               </li>
               <li class="menu-item online">
-                <span id="online-count">22</span> Online
+                <span id="online-count">22</span> Onl
               </li>
             </ul>
           </nav>
@@ -176,7 +178,6 @@
               <section id="posts" class="posts-expand">
                 
 
-
   
   <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
     <div class="post-date">
@@ -235,12 +236,11 @@
   
 
 
-              </section>
-            
 <nav class="pagination">
      <span class="page-number current">1</span>
 </nav>
 
+              </section>
             </div>
           </div>
           <div class="sidebar-toggle">
@@ -370,7 +370,24 @@
   
     <script src="/js/hellcatvn.js"></script>
   
+    <script src="/js/jquery.share.min.js"></script>
+  
 
+    <script>
+    $(document).ready(function () {
+      function share() {
+        if ($(".post-share").length) {
+          $(".post-share").share({
+            disabled: ['douban','diandian'],
+            wechatQrcodeTitle: "WeChat Scan",
+            wechatQrcodeHelper: "<p>WeChat scan, share in the upper right corner</p>",
+            source: "HellCatVN Blog"
+          });
+        }
+      }
+      share();
+    })    
+    </script>
 
 <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
 <script>AV.initialize("8yyK153myENY4PL4lfa4W4wc-gzGzoHsz", "IK2SaH7qCFqqvwNJhxkIyQnA");</script>

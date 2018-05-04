@@ -14,6 +14,8 @@
     
       <link rel="stylesheet" href="/css/main.css">
     
+      <link rel="stylesheet" href="/css/share.min.css">
+    
   
   <link href="https://fonts.loli.net/css?family=Sigmar One:300,300italic,400,400italic,700,700italic&amp;subset=latin,latin-ext"
         rel="stylesheet" type="text/css">
@@ -110,7 +112,7 @@
                   </form>
               </li>
               <li class="menu-item online">
-                <span id="online-count">22</span> Online
+                <span id="online-count">22</span> Onl
               </li>
             </ul>
           </nav>
@@ -244,14 +246,27 @@
 <p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
 
       </div>
+      <div class="post-share">Share：</div>
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+          <div></div>
+          <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+            <span>Donation</span>
+          </button>
+          <div id="QR" style="display: none;">
+            <div id="bitcoin" style="display: inline-block">
+              <img id="bitcoin_qr" src="/images/bitcoin.png" alt="" />
+              <p>Bitcoin Donation</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="post-footer">
+        
+      </footer>
     </div>
   </article>
               </section>
-            
-<nav class="pagination">
-     
-</nav>
-
             </div>
           </div>
           <div class="sidebar-toggle">
@@ -381,7 +396,24 @@
   
     <script src="/js/hellcatvn.js"></script>
   
+    <script src="/js/jquery.share.min.js"></script>
+  
 
+    <script>
+    $(document).ready(function () {
+      function share() {
+        if ($(".post-share").length) {
+          $(".post-share").share({
+            disabled: ['douban','diandian'],
+            wechatQrcodeTitle: "WeChat Scan",
+            wechatQrcodeHelper: "<p>WeChat scan, share in the upper right corner</p>",
+            source: "HellCatVN Blog"
+          });
+        }
+      }
+      share();
+    })    
+    </script>
 
 <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
 <script>AV.initialize("8yyK153myENY4PL4lfa4W4wc-gzGzoHsz", "IK2SaH7qCFqqvwNJhxkIyQnA");</script>
