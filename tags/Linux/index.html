@@ -17,6 +17,10 @@
     
       <link rel="stylesheet" href="/css/share.min.css">
     
+      <link rel="stylesheet" href="/css/color.css">
+    
+      <link rel="stylesheet" href="/css/APlayer.min.css">
+    
   
   <link href="https://fonts.loli.net/css?family=Sigmar One:300,300italic,400,400italic,700,700italic&amp;subset=latin,latin-ext"
         rel="stylesheet" type="text/css">
@@ -97,7 +101,7 @@
               
               <li class="menu-item menu-item">
                 
-                <a href="/about " rel="section">
+                <a href="/about-me " rel="section">
                   
                   <i class="menu-item-icon fa fa-fw fa-rocket"></i>
                   <br /> 
@@ -187,7 +191,7 @@
           Học Linux Cùng HellCatVN [1304] | Những câu hỏi thường gặp khi sử dụng linux
         </a>
       
-      <time datetime="2018-05-15T22:11:25.000Z">
+      <time datetime="2018-05-15T23:11:25.000Z">
         2018-05-16
       </time>
     </div>
@@ -277,7 +281,7 @@
             <div class="footer-image "></div>
             <div class="footer-inner ">
                 <p>Blog has sprouted
-                    <span id="since "></span>
+                    <span id="since ">25-12-2015</span>
                     <span class="my-face ">(●'◡'●)ﾉ♥</span>
                 </p>
                 <p>Hosted on
@@ -294,6 +298,8 @@
                     <span class="author " itemprop="copyrightHolder ">HellCatVN</span>.</p>
             </div>
         </footer>
+        <canvas id="evanyou-canvas"></canvas>
+        <div id="aplayer"></div>
         <div class="back-to-top active " style="top: -900px; ">
             <i class="fa fa-arrow-up "></i>
         </div>
@@ -324,6 +330,10 @@
   
     <script src="/js/jquery.share.min.js"></script>
   
+    <script src="/js/color.js"></script>
+  
+    <script src="/js/APlayer.min.js"></script>
+  
 
     <script>
     $(document).ready(function () {
@@ -340,6 +350,28 @@
       share();
     })    
     </script>
+    <script>
+      const ap = new APlayer({
+        container: document.getElementById('aplayer'),
+        mini: true,
+        fixed: true,
+        autoplay: true,
+        loop: 'all',
+        order: 'random',
+        preload: 'auto',
+        volume: 0.7,
+        mutex: true,
+        listFolded: false,
+        listMaxHeight: '90px',
+        lrcType: 0,
+        audio: [{
+          name: 'Be Your EveryThing',
+          artist: 'Boy Like Girls',
+          url: '../music/BeYourEverything.mp3',
+          cover: '',
+        }]
+      });
+    </script>    
 
 <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
 <script>AV.initialize("8yyK153myENY4PL4lfa4W4wc-gzGzoHsz", "IK2SaH7qCFqqvwNJhxkIyQnA");</script>

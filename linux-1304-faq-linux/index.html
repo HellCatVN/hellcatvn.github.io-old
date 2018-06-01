@@ -17,6 +17,10 @@
     
       <link rel="stylesheet" href="/css/share.min.css">
     
+      <link rel="stylesheet" href="/css/color.css">
+    
+      <link rel="stylesheet" href="/css/APlayer.min.css">
+    
   
   <link href="https://fonts.loli.net/css?family=Sigmar One:300,300italic,400,400italic,700,700italic&amp;subset=latin,latin-ext"
         rel="stylesheet" type="text/css">
@@ -97,7 +101,7 @@
               
               <li class="menu-item menu-item">
                 
-                <a href="/about " rel="section">
+                <a href="/about-me " rel="section">
                   
                   <i class="menu-item-icon fa fa-fw fa-rocket"></i>
                   <br /> 
@@ -223,7 +227,7 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">Published on</span>
-            <time title="publishedday" itemprop="dateCreated datePublished" datetime="2018-05-16T06:11:25+08:00">
+            <time title="publishedday" itemprop="dateCreated datePublished" datetime="2018-05-16T06:11:25+07:00">
               2018-05-16
             </time>
           </span>
@@ -256,8 +260,7 @@
         </div>
       </header>
       <div class="post-body" itemprop="articleBody">
-        <p>Ở bài viết này mình sẽ tổng hợp các câu hỏi những lỗi và cách sửa lỗi mình gặp khi sử dụng các Linux Distro. Hiện tại khi viết bài viết này thì mình đang sử dụng Kunbutu 18.04 LTS.Mỗi bài viết trong chủ đề này sẽ giới hạn khoảng 30 câu hỏi và bắt đầu từ số 1304.Vì sao ư :v vì nó là sinh nhật mình đơn giản thế thôi ^^!.Các bạn thoải mái để đặt câu hỏi dưới bình luận cho mình nha mình sẽ tổng hợp và cố trả lời cho các bạn ở dưới bình luận<br><img src="/linux-1304-faq-linux\faq.png" alt="faq.png" title=""><br><a id="more"></a><br>1.The NTFS partition is in an unsafe state. please resume and shutdown Windows fully<br>-&gt;ntfsfix /dev/sda2 (sda2 is your error drive name) Run this command will help you no need to go in windows then shutdown</p>
-<p>Bài Viết sẽ tiếp tục cho đến khi đủ số câu hỏi</p>
+        <p>Ở bài viết này mình sẽ tổng hợp các câu hỏi những lỗi và cách sửa lỗi mình gặp khi sử dụng các Linux Distro. Hiện tại khi viết bài viết này thì mình đang sử dụng Kunbutu 18.04 LTS.Mỗi bài viết trong chủ đề này sẽ giới hạn khoảng 30 câu hỏi và bắt đầu từ số 1304.Vì sao ư :v vì nó là sinh nhật mình đơn giản thế thôi ^^!.Các bạn thoải mái để đặt câu hỏi dưới bình luận cho mình nha mình sẽ tổng hợp và cố trả lời cho các bạn ở dưới bình luận<br><img src="/linux-1304-faq-linux\faq.png" alt="faq.png" title=""><br><a id="more"></a><br>1.The NTFS partition is in an unsafe state. please resume and shutdown Windows fully<br>—&gt;ntfsfix /dev/sda2 (sda2 is your error drive name) Run this command will help you no need to go in windows then shutdown<br>2.Các bộ gõ tiếng việt<br>—&gt;Bogo: <a href="http://ibus-bogo.readthedocs.io/en/latest/install.html" target="_blank" rel="noopener">http://ibus-bogo.readthedocs.io/en/latest/install.html</a><br>—&gt;ibus: sudo apt-get install ibus-unikey<br>—&gt;ifcitx-unikey: <a href="https://github.com/fcitx/fcitx-unikey" target="_blank" rel="noopener">https://github.com/fcitx/fcitx-unikey</a><br>——&gt;Dùng thế bộ gõ nào là tùy bạn nha<br>3.Làm sao để chuyển từ python 2 thành python 3 và ngược lại (python 3 về python 2) trong linux<br>-Gõ :python –version<br>-Để check version python hiện tại<br>-Gõ :alias python=python3<br>-Để chuyển version python hiện tại (python2) sang python3<br>-Gõ :alias python=python2<br>-Để chuyển version python hiện tại sang python2<br>4.<br>Bài Viết sẽ tiếp tục cho đến khi đủ số câu hỏi </p>
 
       </div>
       <div class="post-share">Share：</div>
@@ -388,7 +391,7 @@
             <div class="footer-image "></div>
             <div class="footer-inner ">
                 <p>Blog has sprouted
-                    <span id="since "></span>
+                    <span id="since ">25-12-2015</span>
                     <span class="my-face ">(●'◡'●)ﾉ♥</span>
                 </p>
                 <p>Hosted on
@@ -405,6 +408,8 @@
                     <span class="author " itemprop="copyrightHolder ">HellCatVN</span>.</p>
             </div>
         </footer>
+        <canvas id="evanyou-canvas"></canvas>
+        <div id="aplayer"></div>
         <div class="back-to-top active " style="top: -900px; ">
             <i class="fa fa-arrow-up "></i>
         </div>
@@ -435,6 +440,10 @@
   
     <script src="/js/jquery.share.min.js"></script>
   
+    <script src="/js/color.js"></script>
+  
+    <script src="/js/APlayer.min.js"></script>
+  
 
     <script>
     $(document).ready(function () {
@@ -451,6 +460,28 @@
       share();
     })    
     </script>
+    <script>
+      const ap = new APlayer({
+        container: document.getElementById('aplayer'),
+        mini: true,
+        fixed: true,
+        autoplay: true,
+        loop: 'all',
+        order: 'random',
+        preload: 'auto',
+        volume: 0.7,
+        mutex: true,
+        listFolded: false,
+        listMaxHeight: '90px',
+        lrcType: 0,
+        audio: [{
+          name: 'Be Your EveryThing',
+          artist: 'Boy Like Girls',
+          url: '../music/BeYourEverything.mp3',
+          cover: '',
+        }]
+      });
+    </script>    
 
 <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
 <script>AV.initialize("8yyK153myENY4PL4lfa4W4wc-gzGzoHsz", "IK2SaH7qCFqqvwNJhxkIyQnA");</script>
