@@ -5,7 +5,7 @@
 <head>
   <meta charset="UTF-8">
   <meta property="fb:app_id" content="190302875120198" />
-  <title>Học Linux Cùng HellCatVN [1304] | Những câu hỏi thường gặp khi sử dụng linux [ HellCatVN ]</title>
+  <title>UserScripts [02] Hướng Dẫn Viết Script Getlink Nhaccuatui [ HellCatVN ]</title>
   
     <!-- stylesheets list from config.yml -->
     
@@ -185,10 +185,10 @@
   <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
     <div class="post-date">
       <div class="post-month">
-        May
+        June
       </div>
       <div class="post-day">
-        16
+        01
       </div>
     </div>
     
@@ -197,16 +197,19 @@
           <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
             <a href="#" itemprop="url" rel="index">
               <span itemprop="name">
-                Linux
+                UserScripts
               </span>
             </a>
           </span>
+          
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+          <script type="text/javascript">var clipboard = new ClipboardJS('#getContent');</script>
           
           
       </div>
       
     <div class="post-block">
-      <link itemprop="mainEntityOfPage" href="../linux-1304-faq-linux/">
+      <link itemprop="mainEntityOfPage" href="../userscript-02-huong-dan-viet-script/">
       <span hidden="" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
         <meta itemprop="name" content="HellCatVN">
         <meta itemprop="description" content="">
@@ -217,8 +220,8 @@
       </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          <a class="post-title-link" href="../linux-1304-faq-linux/" itemprop="url">
-            Học Linux Cùng HellCatVN [1304] | Những câu hỏi thường gặp khi sử dụng linux
+          <a class="post-title-link" href="../userscript-02-huong-dan-viet-script/" itemprop="url">
+            UserScripts [02] Hướng Dẫn Viết Script Getlink Nhaccuatui
           </a>
         </h1>
         <div class="post-meta">
@@ -227,8 +230,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">Published on</span>
-            <time title="publishedday" itemprop="dateCreated datePublished" datetime="2018-05-16T06:11:25+07:00">
-              2018-05-16
+            <time title="publishedday" itemprop="dateCreated datePublished" datetime="2018-06-01T17:41:05+07:00">
+              2018-06-01
             </time>
           </span>
           <span class="post-category">
@@ -243,13 +246,13 @@
               <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
                 <a href="/categories/Nodejs/" itemprop="url" rel="index">
                   <span itemprop="name">
-                    Linux
+                    UserScripts
                   </span>
                 </a>
               </span>
               
           </span>
-          <span id="linux-1304-faq-linux" class="leancloud_visitors" data-flag-title="">
+          <span id="userscript-02-huong-dan-viet-script" class="leancloud_visitors" data-flag-title="">
             <span class="post-meta-divider">•</span>
             <span class="post-meta-item-icon">
               <i class="fa fa-eye"></i>
@@ -260,7 +263,25 @@
         </div>
       </header>
       <div class="post-body" itemprop="articleBody">
-        <p>Ở bài viết này mình sẽ tổng hợp các câu hỏi những lỗi và cách sửa lỗi mình gặp khi sử dụng các Linux Distro. Hiện tại khi viết bài viết này thì mình đang sử dụng Kunbutu 18.04 LTS.Mỗi bài viết trong chủ đề này sẽ giới hạn khoảng 30 câu hỏi và bắt đầu từ số 1304.Vì sao ư :v vì nó là sinh nhật mình đơn giản thế thôi ^^!.Các bạn thoải mái để đặt câu hỏi dưới bình luận cho mình nha mình sẽ tổng hợp và cố trả lời cho các bạn ở dưới bình luận<br><img src="/linux-1304-faq-linux\faq.png" alt="faq.png" title=""><br><a id="more"></a><br>1.The NTFS partition is in an unsafe state. please resume and shutdown Windows fully<br>—&gt;ntfsfix /dev/sda2 (sda2 is your error drive name) Run this command will help you no need to go in windows then shutdown<br>2.Các bộ gõ tiếng việt<br>—&gt;Bogo: <a href="http://ibus-bogo.readthedocs.io/en/latest/install.html" target="_blank" rel="noopener">http://ibus-bogo.readthedocs.io/en/latest/install.html</a><br>—&gt;ibus: sudo apt-get install ibus-unikey<br>—&gt;ifcitx-unikey: <a href="https://github.com/fcitx/fcitx-unikey" target="_blank" rel="noopener">https://github.com/fcitx/fcitx-unikey</a><br>——&gt;Dùng thế bộ gõ nào là tùy bạn nha<br>3.Làm sao để chuyển từ python 2 thành python 3 và ngược lại (python 3 về python 2) trong linux<br>-Gõ :python –version<br>-Để check version python hiện tại<br>-Gõ :alias python=python3<br>-Để chuyển version python hiện tại (python2) sang python3<br>-Gõ :alias python=python2<br>-Để chuyển version python hiện tại sang python2<br>4.<br>Bài Viết sẽ tiếp tục cho đến khi đủ số câu hỏi </p>
+        <p>Bài viết này được viết khi mình đang thêm 1 cái music player cho blog thì down thử 1 bài hát từ nhaccuatui và không được nên làm cái script giúp các bạn có thể dễ dàng download bài hát từ site này về ^^!.Lưu ý là cách này chỉ có nhạc 128 thôi nên chắc nhaccuatui còn lâu mới fix :v<br>Bắt đầu nào:</p>
+<ul>
+<li>Autoplay chuyển bài rồi thôi để play bài Yêu Five (Yêu 5) Lâu rồi chưa nghe.<br>  Link Cho AE <a href="https://www.nhaccuatui.com/bai-hat/yeu-5-rhymastic.KBov6SjzSzzj.html" target="_blank" rel="noopener">https://www.nhaccuatui.com/bai-hat/yeu-5-rhymastic.KBov6SjzSzzj.html</a><a id="more"></a></li>
+<li>Khởi đầu thì mình view-source của nhaccuatui và thấy rằng tại vị trí khởi tạo player của nhaccuatui có vài cái link và mình đã mò thấy cái link dạng XML thế này:<a href="https://www.nhaccuatui.com/flash/xml?html5=true&amp;key1=ef30711e703a77c19177b51a3ed66da8" target="_blank" rel="noopener">https://www.nhaccuatui.com/flash/xml?html5=true&amp;key1=ef30711e703a77c19177b51a3ed66da8</a><br>Khi Vào link này bạn sẽ thấy ….</li>
+</ul>
+<img src="/userscript-02-huong-dan-viet-script\1.png" alt="1.png" title="">
+<p>à ko thấy gì cả ngoài chữ “song” có gì đó kì kì tại sao lại config player với chữ này thử view-source tiếp file này nào<br><img src="/userscript-02-huong-dan-viet-script\2.png" alt="2.png" title=""><br>A đây rồi bạn có thấy gì không chính là thông tin của bài hát bạn đang tìm đó<br>Ở Tag Location là link mp3,Tag Creator là tác giả,Title là tên bài hát,…<br>-Tiếp theo là code thôi<br>Để lấy dc cái link XML Kia thì mình nghĩ Regular Expression (RegEx) là cách nhanh gọn lẹ nhất :3<br>Mình Chọn Công Cụ Debug Là <a href="https://regex101.com/" target="_blank" rel="noopener">https://regex101.com/</a><br>Sau 1 hồi quằng quại thì mình ra được cái kết quả là chuỗi này:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/https:\/\/www.nhaccuatui.com\/flash\/xml\?html5=true&amp;key1=[a-z,0-9]&#123;30,35&#125;/gm</span><br></pre></td></tr></table></figure></p>
+<img src="/userscript-02-huong-dan-viet-script\3.png" alt="3.png" title="">
+<p>Kế đến mình viết 1 đoạn script để lấy thử cái link XML từ trang nhaccuatui</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> domDocument = <span class="built_in">document</span>.documentElement.innerHTML;</span><br><span class="line"><span class="keyword">var</span> link = <span class="regexp">/https:\/\/www.nhaccuatui.com\/flash\/xml\?html5=true&amp;key1=[a-z,0-9]&#123;30,35&#125;/</span>.exec(domDocument);</span><br><span class="line">alert(link)</span><br></pre></td></tr></table></figure>
+<p>À quên tại sao là alert() mà không phải console.log() thì nhaccuatui đã chặn bạn xuất kết quả trong console<br>Tiếp theo là test coi link lấy được có trả về giá trị mong muốn hay không</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> x = <span class="keyword">new</span> XMLHttpRequest();</span><br><span class="line">x.open(<span class="string">"GET"</span>, link, <span class="literal">true</span>);</span><br><span class="line">x.onreadystatechange = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  alert(x.responseText);</span><br><span class="line">&#125;;</span><br><span class="line">x.send(<span class="literal">null</span>);</span><br></pre></td></tr></table></figure>
+<p>Sau khi đã lấy được điều mong muốn thì mình tiếp tục parse cái Text thành XML (responseXML Không Được nên mình mới parse nha) bằng đoạn code bên dưới<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">parser = <span class="keyword">new</span> DOMParser();</span><br><span class="line">xmlDoc = parser.parseFromString(text,<span class="string">"text/xml"</span>);</span><br></pre></td></tr></table></figure></p>
+<p>Và sau khi parse xong thì mình đến bước cuối lấy tag Location ra và mở tab mới với đoạn Code trên là xong ^^’<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">xmlDoc.getElementsByTagName(<span class="string">"location"</span>)[<span class="number">0</span>].childNodes[<span class="number">0</span>].nodeValue;</span><br></pre></td></tr></table></figure></p>
+<p>Toàn Bộ Đoạn Code </p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> domDocument = <span class="built_in">document</span>.documentElement.innerHTML;</span><br><span class="line"><span class="keyword">var</span> link = <span class="regexp">/https:\/\/www.nhaccuatui.com\/flash\/xml\?html5=true&amp;key1=[a-z,0-9]&#123;30,35&#125;/</span>.exec(domDocument);</span><br><span class="line"><span class="keyword">var</span> x = <span class="keyword">new</span> XMLHttpRequest();</span><br><span class="line">x.open(<span class="string">"GET"</span>, link, <span class="literal">true</span>);</span><br><span class="line">x.onreadystatechange = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  parser = <span class="keyword">new</span> DOMParser();</span><br><span class="line">  xmlDoc = parser.parseFromString(x.responseText,<span class="string">"text/xml"</span>);</span><br><span class="line">  mp3Link = xmlDoc.getElementsByTagName(<span class="string">"location"</span>);</span><br><span class="line">&#125;;</span><br><span class="line">x.send(<span class="literal">null</span>);</span><br><span class="line"><span class="built_in">window</span>.open(mp3Link[<span class="number">0</span>].textContent);</span><br></pre></td></tr></table></figure>
+<p>Code Sau Khi Được Làm Đẹp Thêm Tí Cho Thêm Cái Notification</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">javascript: (<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;<span class="keyword">var</span> _0xd73f=[<span class="string">"\x35\x20\x74\x3D\x48\x2E\x77\x2E\x42\x3B\x35\x20\x6F\x3D\x2F\x66\x3A\x5C\x2F\x5C\x2F\x47\x2E\x49\x2E\x6D\x5C\x2F\x50\x5C\x2F\x6A\x5C\x3F\x51\x3D\x67\x26\x52\x3D\x5B\x61\x2D\x7A\x2C\x30\x2D\x39\x5D\x7B\x53\x2C\x4E\x7D\x2F\x2E\x4C\x28\x74\x29\x3B\x35\x20\x78\x3D\x62\x20\x4D\x28\x29\x3B\x78\x2E\x70\x28\x22\x54\x22\x2C\x6F\x2C\x67\x29\x3B\x78\x2E\x4B\x3D\x37\x28\x29\x7B\x68\x3D\x62\x20\x4A\x28\x29\x3B\x63\x3D\x68\x2E\x4F\x28\x78\x2E\x41\x2C\x22\x79\x2F\x6A\x22\x29\x3B\x69\x3D\x63\x2E\x6E\x28\x22\x44\x22\x29\x3B\x65\x3D\x63\x2E\x6E\x28\x22\x65\x22\x29\x7D\x3B\x78\x2E\x46\x28\x45\x29\x3B\x31\x3D\x69\x5B\x30\x5D\x2E\x72\x3B\x36\x28\x21\x28\x22\x32\x22\x56\x20\x71\x29\x29\x7B\x31\x39\x28\x22\x31\x68\x20\x31\x38\x20\x31\x37\x20\x31\x63\x20\x31\x67\x20\x55\x20\x38\x22\x29\x7D\x6C\x20\x36\x28\x32\x2E\x33\x3D\x3D\x3D\x22\x6B\x22\x29\x7B\x64\x28\x31\x29\x7D\x6C\x20\x36\x28\x32\x2E\x33\x21\x3D\x3D\x27\x31\x66\x27\x29\x7B\x32\x2E\x31\x65\x28\x37\x28\x33\x29\x7B\x36\x28\x33\x3D\x3D\x3D\x22\x6B\x22\x29\x7B\x64\x28\x31\x29\x7D\x7D\x29\x7D\x37\x20\x64\x28\x31\x29\x7B\x35\x20\x38\x3D\x62\x20\x32\x28\x27\x31\x64\x20\x31\x62\x20\x31\x36\x27\x2C\x7B\x59\x3A\x27\x66\x3A\x2F\x2F\x58\x2E\x57\x2E\x6D\x2F\x75\x2F\x5A\x3F\x73\x3D\x31\x30\x26\x76\x3D\x34\x27\x2C\x31\x35\x3A\x22\u0110\xE3\x20\x31\x31\x20\x31\x32\xE0\x31\x33\x20\x43\xF4\x31\x34\x22\x2B\x65\x5B\x30\x5D\x2E\x72\x2C\x7D\x29\x3B\x38\x2E\x31\x61\x3D\x37\x28\x29\x7B\x71\x2E\x70\x28\x31\x29\x7D\x7D"</span>,<span class="string">"\x7C"</span>,<span class="string">"\x73\x70\x6C\x69\x74"</span>,<span class="string">"\x7C\x63\x6F\x6E\x74\x65\x6E\x74\x7C\x4E\x6F\x74\x69\x66\x69\x63\x61\x74\x69\x6F\x6E\x7C\x70\x65\x72\x6D\x69\x73\x73\x69\x6F\x6E\x7C\x7C\x76\x61\x72\x7C\x69\x66\x7C\x66\x75\x6E\x63\x74\x69\x6F\x6E\x7C\x6E\x6F\x74\x69\x66\x69\x63\x61\x74\x69\x6F\x6E\x7C\x7C\x7C\x6E\x65\x77\x7C\x78\x6D\x6C\x44\x6F\x63\x7C\x73\x65\x6E\x64\x4E\x6F\x74\x69\x7C\x74\x69\x74\x6C\x65\x7C\x68\x74\x74\x70\x73\x7C\x74\x72\x75\x65\x7C\x70\x61\x72\x73\x65\x72\x7C\x6D\x70\x33\x4C\x69\x6E\x6B\x7C\x78\x6D\x6C\x7C\x67\x72\x61\x6E\x74\x65\x64\x7C\x65\x6C\x73\x65\x7C\x63\x6F\x6D\x7C\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x73\x42\x79\x54\x61\x67\x4E\x61\x6D\x65\x7C\x6C\x69\x6E\x6B\x7C\x6F\x70\x65\x6E\x7C\x77\x69\x6E\x64\x6F\x77\x7C\x74\x65\x78\x74\x43\x6F\x6E\x74\x65\x6E\x74\x7C\x7C\x64\x6F\x6D\x44\x6F\x63\x75\x6D\x65\x6E\x74\x7C\x7C\x7C\x64\x6F\x63\x75\x6D\x65\x6E\x74\x45\x6C\x65\x6D\x65\x6E\x74\x7C\x7C\x74\x65\x78\x74\x7C\x7C\x72\x65\x73\x70\x6F\x6E\x73\x65\x54\x65\x78\x74\x7C\x69\x6E\x6E\x65\x72\x48\x54\x4D\x4C\x7C\x7C\x6C\x6F\x63\x61\x74\x69\x6F\x6E\x7C\x6E\x75\x6C\x6C\x7C\x73\x65\x6E\x64\x7C\x77\x77\x77\x7C\x64\x6F\x63\x75\x6D\x65\x6E\x74\x7C\x6E\x68\x61\x63\x63\x75\x61\x74\x75\x69\x7C\x44\x4F\x4D\x50\x61\x72\x73\x65\x72\x7C\x6F\x6E\x72\x65\x61\x64\x79\x73\x74\x61\x74\x65\x63\x68\x61\x6E\x67\x65\x7C\x65\x78\x65\x63\x7C\x58\x4D\x4C\x48\x74\x74\x70\x52\x65\x71\x75\x65\x73\x74\x7C\x33\x35\x7C\x70\x61\x72\x73\x65\x46\x72\x6F\x6D\x53\x74\x72\x69\x6E\x67\x7C\x66\x6C\x61\x73\x68\x7C\x68\x74\x6D\x6C\x35\x7C\x6B\x65\x79\x31\x7C\x33\x30\x7C\x47\x45\x54\x7C\x64\x65\x73\x6B\x74\x6F\x70\x7C\x69\x6E\x7C\x67\x69\x74\x68\x75\x62\x75\x73\x65\x72\x63\x6F\x6E\x74\x65\x6E\x74\x7C\x61\x76\x61\x74\x61\x72\x73\x31\x7C\x69\x63\x6F\x6E\x7C\x31\x37\x35\x32\x33\x35\x36\x37\x7C\x34\x36\x30\x7C\x47\x65\x74\x7C\x54\x68\x7C\x6E\x68\x7C\x6E\x67\x7C\x62\x6F\x64\x79\x7C\x4E\x68\x61\x63\x63\x75\x61\x74\x75\x69\x7C\x64\x6F\x65\x73\x7C\x62\x72\x6F\x77\x73\x65\x72\x7C\x61\x6C\x65\x72\x74\x7C\x6F\x6E\x63\x6C\x69\x63\x6B\x7C\x4D\x50\x33\x7C\x6E\x6F\x74\x7C\x47\x65\x74\x4C\x69\x6E\x6B\x7C\x72\x65\x71\x75\x65\x73\x74\x50\x65\x72\x6D\x69\x73\x73\x69\x6F\x6E\x7C\x64\x65\x6E\x69\x65\x64\x7C\x73\x75\x70\x70\x6F\x72\x74\x7C\x54\x68\x69\x73"</span>,<span class="string">""</span>,<span class="string">"\x66\x72\x6F\x6D\x43\x68\x61\x72\x43\x6F\x64\x65"</span>,<span class="string">"\x72\x65\x70\x6C\x61\x63\x65"</span>,<span class="string">"\x5C\x77\x2B"</span>,<span class="string">"\x5C\x62"</span>,<span class="string">"\x67"</span>];<span class="built_in">eval</span>(<span class="function"><span class="keyword">function</span>(<span class="params">_0x2664x1,_0x2664x2,_0x2664x3,_0x2664x4,_0x2664x5,_0x2664x6</span>)</span>&#123;_0x2664x5= <span class="function"><span class="keyword">function</span>(<span class="params">_0x2664x3</span>)</span>&#123;<span class="keyword">return</span> (_0x2664x3&lt; _0x2664x2?_0xd73f[<span class="number">4</span>]:_0x2664x5(<span class="built_in">parseInt</span>(_0x2664x3/ _0x2664x2)))+ ((_0x2664x3= _0x2664x3% _0x2664x2)&gt; <span class="number">35</span>?<span class="built_in">String</span>[_0xd73f[<span class="number">5</span>]](_0x2664x3+ <span class="number">29</span>):_0x2664x3.toString(<span class="number">36</span>))&#125;;<span class="keyword">if</span>(!_0xd73f[<span class="number">4</span>][_0xd73f[<span class="number">6</span>]](<span class="regexp">/^/</span>,<span class="built_in">String</span>))&#123;<span class="keyword">while</span>(_0x2664x3--)&#123;_0x2664x6[_0x2664x5(_0x2664x3)]= _0x2664x4[_0x2664x3]|| _0x2664x5(_0x2664x3)&#125;;_0x2664x4= [<span class="function"><span class="keyword">function</span>(<span class="params">_0x2664x5</span>)</span>&#123;<span class="keyword">return</span> _0x2664x6[_0x2664x5]&#125;];_0x2664x5= <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;<span class="keyword">return</span> _0xd73f[<span class="number">7</span>]&#125;;_0x2664x3= <span class="number">1</span>&#125;;<span class="keyword">while</span>(_0x2664x3--)&#123;<span class="keyword">if</span>(_0x2664x4[_0x2664x3])&#123;_0x2664x1= _0x2664x1[_0xd73f[<span class="number">6</span>]]( <span class="keyword">new</span> <span class="built_in">RegExp</span>(_0xd73f[<span class="number">8</span>]+ _0x2664x5(_0x2664x3)+ _0xd73f[<span class="number">8</span>],_0xd73f[<span class="number">9</span>]),_0x2664x4[_0x2664x3])&#125;&#125;;<span class="keyword">return</span> _0x2664x1&#125;(_0xd73f[<span class="number">0</span>],<span class="number">62</span>,<span class="number">80</span>,_0xd73f[<span class="number">3</span>][_0xd73f[<span class="number">2</span>]](_0xd73f[<span class="number">1</span>]),<span class="number">0</span>,&#123;&#125;))&#125;)()</span><br></pre></td></tr></table></figure>
+<p>Sau khi đã hoàn thành mình lưu vào bookmark mỗi lần dùng thì chỉ cần ấn là xong</p>
 
       </div>
       <div class="post-share">Share：</div>
@@ -283,20 +304,15 @@
           <div class="post-nav">
             <div class="post-nav-next post-nav-item">
               
-                <a href="https://hellcatvn.github.io/userscript-01-gioi-thieu/" rel="next" title="UserScripts [01] Giới thiệu về UserScripts">
+                <a href="https://hellcatvn.github.io/linux-1304-faq-linux/" rel="next" title="Học Linux Cùng HellCatVN [1304] | Những câu hỏi thường gặp khi sử dụng linux">
                   <i class="fa fa-chevron-left"></i>
-                  UserScripts [01] Giới thiệu về UserScripts
+                  Học Linux Cùng HellCatVN [1304] | Những câu hỏi thường gặp khi sử dụng linux
                 </a>
                 
             </div>
             <span class="post-nav-divider"></span>
             <div class="post-nav-prev post-nav-item">
               
-                <a href="https://hellcatvn.github.io/userscript-02-huong-dan-viet-script/" rel="prev" title="UserScripts [02] Hướng Dẫn Viết Script Getlink Nhaccuatui">
-                  UserScripts [02] Hướng Dẫn Viết Script Getlink Nhaccuatui
-                    <i class="fa fa-chevron-right"></i>
-                </a>
-                
             </div>
           </div>
           
@@ -313,7 +329,7 @@
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
 </script>
-    <div class="fb-comments" data-href="https://hellcatvn.github.io/linux-1304-faq-linux/" data-numposts="10"></div>
+    <div class="fb-comments" data-href="https://hellcatvn.github.io/userscript-02-huong-dan-viet-script/" data-numposts="10"></div>
 </div>
               </section>
             </div>
