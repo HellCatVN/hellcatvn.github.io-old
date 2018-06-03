@@ -268,9 +268,9 @@
 <li>Autoplay chuyển bài rồi thôi để play bài Yêu Five (Yêu 5) Lâu rồi chưa nghe.<br>  Link Cho AE <a href="https://www.nhaccuatui.com/bai-hat/yeu-5-rhymastic.KBov6SjzSzzj.html" target="_blank" rel="noopener">https://www.nhaccuatui.com/bai-hat/yeu-5-rhymastic.KBov6SjzSzzj.html</a><a id="more"></a></li>
 <li>Khởi đầu thì mình view-source của nhaccuatui và thấy rằng tại vị trí khởi tạo player của nhaccuatui có vài cái link và mình đã mò thấy cái link dạng XML thế này:<a href="https://www.nhaccuatui.com/flash/xml?html5=true&amp;key1=ef30711e703a77c19177b51a3ed66da8" target="_blank" rel="noopener">https://www.nhaccuatui.com/flash/xml?html5=true&amp;key1=ef30711e703a77c19177b51a3ed66da8</a><br>Khi Vào link này bạn sẽ thấy ….</li>
 </ul>
-<img src="/userscript-02-huong-dan-viet-script\1.png" alt="1.png" title="">
-<p>à ko thấy gì cả ngoài chữ “song” có gì đó kì kì tại sao lại config player với chữ này thử view-source tiếp file này nào<br><img src="/userscript-02-huong-dan-viet-script\2.png" alt="2.png" title=""><br>A đây rồi bạn có thấy gì không chính là thông tin của bài hát bạn đang tìm đó<br>Ở Tag Location là link mp3,Tag Creator là tác giả,Title là tên bài hát,…<br>-Tiếp theo là code thôi<br>Để lấy dc cái link XML Kia thì mình nghĩ Regular Expression (RegEx) là cách nhanh gọn lẹ nhất :3<br>Mình Chọn Công Cụ Debug Là <a href="https://regex101.com/" target="_blank" rel="noopener">https://regex101.com/</a><br>Sau 1 hồi quằng quại thì mình ra được cái kết quả là chuỗi này:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/https:\/\/www.nhaccuatui.com\/flash\/xml\?html5=true&amp;key1=[a-z,0-9]&#123;30,35&#125;/gm</span><br></pre></td></tr></table></figure></p>
-<img src="/userscript-02-huong-dan-viet-script\3.png" alt="3.png" title="">
+<img src="/userscript-02-huong-dan-viet-script/1.png" alt="1.png" title="">
+<p>à ko thấy gì cả ngoài chữ “song” có gì đó kì kì tại sao lại config player với chữ này thử view-source tiếp file này nào<br><img src="/userscript-02-huong-dan-viet-script/2.png" alt="2.png" title=""><br>A đây rồi bạn có thấy gì không chính là thông tin của bài hát bạn đang tìm đó<br>Ở Tag Location là link mp3,Tag Creator là tác giả,Title là tên bài hát,…<br>-Tiếp theo là code thôi<br>Để lấy dc cái link XML Kia thì mình nghĩ Regular Expression (RegEx) là cách nhanh gọn lẹ nhất :3<br>Mình Chọn Công Cụ Debug Là <a href="https://regex101.com/" target="_blank" rel="noopener">https://regex101.com/</a><br>Sau 1 hồi quằng quại thì mình ra được cái kết quả là chuỗi này:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/https:\/\/www.nhaccuatui.com\/flash\/xml\?html5=true&amp;key1=[a-z,0-9]&#123;30,35&#125;/gm</span><br></pre></td></tr></table></figure></p>
+<img src="/userscript-02-huong-dan-viet-script/3.png" alt="3.png" title="">
 <p>Kế đến mình viết 1 đoạn script để lấy thử cái link XML từ trang nhaccuatui</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> domDocument = <span class="built_in">document</span>.documentElement.innerHTML;</span><br><span class="line"><span class="keyword">var</span> link = <span class="regexp">/https:\/\/www.nhaccuatui.com\/flash\/xml\?html5=true&amp;key1=[a-z,0-9]&#123;30,35&#125;/</span>.exec(domDocument);</span><br><span class="line">alert(link)</span><br></pre></td></tr></table></figure>
 <p>À quên tại sao là alert() mà không phải console.log() thì nhaccuatui đã chặn bạn xuất kết quả trong console<br>Tiếp theo là test coi link lấy được có trả về giá trị mong muốn hay không</p>
@@ -502,15 +502,14 @@
               volume: 0.7,
               mutex: true,
               listFolded: false,
-              listMaxHeight: '90px',
-              lrcType: 0,
+              listMaxHeight: '320px',
+              lrcType: 3,
               music:e
             });
             window.aplayers || (window.aplayers = []), window.aplayers.push(a)
           }
         })
       })      
-    
     </script>    
 
 <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>

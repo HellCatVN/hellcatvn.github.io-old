@@ -5,7 +5,7 @@
 <head>
   <meta charset="UTF-8">
   <meta property="fb:app_id" content="190302875120198" />
-  <title>Tag: Instagram , ChatFuel [ HellCatVN ]</title>
+  <title>Music Player [ HellCatVN ]</title>
   
     <!-- stylesheets list from config.yml -->
     
@@ -182,24 +182,113 @@
             <div id="content" class="content">
               <section id="posts" class="posts-expand">
                 
-<div id="tag">
-  <h1>Instagram , ChatFuel</h1>
-  
-    <div class="tag-item">
-      
-        <a href="/">
-          ChatFuel [01] Api Lưu Ảnh Video Công Khai Instagram
-        </a>
-      
-      <time datetime="2018-05-04T15:47:36.000Z">
-        2018-05-04
-      </time>
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+    <div class="post-date">
+      <div class="post-month">
+        June
+      </div>
+      <div class="post-day">
+        03
+      </div>
     </div>
-  
+    <div class="post-block">
+      <link itemprop="mainEntityOfPage" href="../music/index.html">
+      <span hidden="" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+        <meta itemprop="name" content="HellCatVN">
+        <meta itemprop="description" content="">
+        <meta itemprop="image" content="images/DIYgod.jpg">
+      </span>
+      <span hidden="" itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+        <meta itemprop="name" content="HellCatVN">
+      </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          <a class="post-title-link" href="../music/index.html" itemprop="url">
+            Music Player
+          </a>
+        </h1>
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Published on</span>
+            <time title="publishedday" itemprop="dateCreated datePublished" datetime="2018-06-03T12:57:37+07:00">
+              2018-06-03
+            </time>
+          </span>
+          <span id="" class="leancloud_visitors" data-flag-title="">
+            <span class="post-meta-divider">•</span>
+            <span class="post-meta-item-icon">
+              <i class="fa fa-eye"></i>
+            </span>
+            <span class="post-meta-item-text">Views:</span>
+            <span class="leancloud-visitors-count"></span>
+          </span>
+        </div>
+      </header>
+      <div class="post-body" itemprop="articleBody">
+        
+        <div id="aplayer1"></div>
+        <script src="../js/jquery-3.3.1.min.js"></script>
+        <script>
+            $(function () {
+              $.ajax({
+                url: "../music.json",
+                success: function (e) {
+                  const ap1 = new APlayer({
+                    container: document.getElementById('aplayer1'),
+                    mini: false,
+                    fixed: false,
+                    autoplay: false,
+                    loop: 'all',
+                    order: 'list',
+                    preload: 'auto',
+                    volume: 0.7,
+                    mutex: true,
+                    listFolded: false,
+                    listMaxHeight: '90px',
+                    lrcType: 3,
+                    music:e
+                  });
+                  window.aplayers || (window.aplayers = []), window.aplayers.push(a)
+                }
+              })
+            })      
+        </script>        
+      </div>
+      <div class="post-share">Share：</div>
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+          <div></div>
+          <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+            <span>Donation</span>
+          </button>
+          <div id="QR" style="display: none;">
+            <div id="bitcoin" style="display: inline-block">
+              <img id="bitcoin_qr" src="/images/bitcoin.png" alt="" />
+              <p>Bitcoin Donation</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="post-footer">
+        
+      </footer>
+    </div>
+  </article>
+  <div class="comments" id="comments">
+<div id="fb-root"></div>
+<script>(function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v3.0&appId=190302875120198&autoLogAppEvents=1';
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+    <div class="fb-comments" data-href="https://hellcatvn.github.io/music/index.html" data-numposts="10"></div>
 </div>
-
-<span class="page-number current">1</span>
-
               </section>
             </div>
           </div>
