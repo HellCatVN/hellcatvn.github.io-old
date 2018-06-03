@@ -5,7 +5,7 @@
 <head>
   <meta charset="UTF-8">
   <meta property="fb:app_id" content="190302875120198" />
-  <title>Archives [ HellCatVN ]</title>
+  <title>Học Linux Cùng HellCatVN [01] | Hướng Dẫn Fix Lỗi Sai Thời Gian Khi Dualboot Windows Và Linux [ HellCatVN ]</title>
   
     <!-- stylesheets list from config.yml -->
     
@@ -181,159 +181,145 @@
           <div class="content-wrap">
             <div id="content" class="content">
               <section id="posts" class="posts-expand">
-                <div class="post-block archive post">
-  <div id="posts" class="posts-collapse">
-    <span class="archive-move-on"></span>
-    <span class="archive-page-counter">
-      There Are 7 Posts In This Website つ(゜-゜)つ
-    </span>
+                
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+    <div class="post-date">
+      <div class="post-month">
+        June
+      </div>
+      <div class="post-day">
+        02
+      </div>
+    </div>
     
-     
+      <div class="post-badge">
         
-        
-        
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2018">2018</h1>
+          <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+            <a href="#" itemprop="url" rel="index">
+              <span itemprop="name">
+                Linux
+              </span>
+            </a>
+          </span>
+          
+          
+      </div>
+      
+    <div class="post-block">
+      <link itemprop="mainEntityOfPage" href="../linux-01-dong-bo-thoi-gian/">
+      <span hidden="" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+        <meta itemprop="name" content="HellCatVN">
+        <meta itemprop="description" content="">
+        <meta itemprop="image" content="images/DIYgod.jpg">
+      </span>
+      <span hidden="" itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+        <meta itemprop="name" content="HellCatVN">
+      </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          <a class="post-title-link" href="../linux-01-dong-bo-thoi-gian/" itemprop="url">
+            Học Linux Cùng HellCatVN [01] | Hướng Dẫn Fix Lỗi Sai Thời Gian Khi Dualboot Windows Và Linux
+          </a>
+        </h1>
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Published on</span>
+            <time title="publishedday" itemprop="dateCreated datePublished" datetime="2018-06-02T18:20:32+07:00">
+              2018-06-02
+            </time>
+          </span>
+          <span class="post-category">
+            <span class="post-meta-divider">•</span>
+            <span class="post-meta-item-icon">
+              <i class="fa fa-folder-o"></i>
+            </span>
+            <span class="post-meta-item-text">
+              
+            </span>
+            
+              <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                <a href="/categories/Nodejs/" itemprop="url" rel="index">
+                  <span itemprop="name">
+                    Linux
+                  </span>
+                </a>
+              </span>
+              
+          </span>
+          <span id="linux-01-dong-bo-thoi-gian" class="leancloud_visitors" data-flag-title="">
+            <span class="post-meta-divider">•</span>
+            <span class="post-meta-item-icon">
+              <i class="fa fa-eye"></i>
+            </span>
+            <span class="post-meta-item-text">Views:</span>
+            <span class="leancloud-visitors-count"></span>
+          </span>
+        </div>
+      </header>
+      <div class="post-body" itemprop="articleBody">
+        <p>Lưu Ý:Vui lòng check pin CMOS của bạn còn hay không trước khi áp dụng cách này.<br>Còn về câu hỏi pin CMOS là gì? Thì nó là cục kim loại tròn tròn gắm trên mainboard (Bo mạch chủ) của bạn<br>-Giải thích lý do vì sao xuất hiện lỗi :v.Thì là hệ điều hành lưu và lấy thời gian từ đồng hồ trên bo mạch chủ để có thể tiếp tục tính thời gian mặc dù ko có điện (Đồng hồ vật lý trên mainboard hoạt động được nhờ pin CMOS).Hầu hết các hệ điều hành như (Linux/Unix/Mac) lưu thời gian trên mainboard mặc định là UTC (Coordinated Universal Time ) trong khi đó đáng chú ý ở hệ điều hành windows lưu thời gian nội bộ (local time).Điều này dẫn đến xung đột trong đồng hồ vật lý<br>Từ đây rút ra được rằng sẽ có 2 cách fix lỗi này:<br><a id="more"></a></p>
+<ul>
+<li>1.Bắt thằng Linux chạy local time</li>
+<li>2.Bắt thằng Windows chạy UTC</li>
+</ul>
+<p>–&gt; Bắt Linux chạy local time sẽ đơn giản hơn </p>
+<p>1.<br>Việc bạn cần làm chỉ là bật terminal (Ctrl+Alt+T) lên và gõ câu lệnh dưới:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">timedatectl <span class="built_in">set</span>-local-rtc 1 --adjust-system-clock</span><br></pre></td></tr></table></figure></p>
+<p>Để check xem đã thành công hay chưa bạn gõ lệnh<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">timedatectl</span><br></pre></td></tr></table></figure></p>
+<p>Để cho linux chạy lại UTC thì cách bạn lại gõ lệnh<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">timedatectl <span class="built_in">set</span>-local-rtc 0</span><br></pre></td></tr></table></figure></p>
+<p>2.Bắt thằng Windows chạy UTC:<br>Chạy CMD với phân quyền Admin (As Administrator)<br>Và Paste Đoạn này<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Reg add HKLM\SYSTEM\CurrentControlSet\Control\TimeZoneInformation /v RealTimeIsUniversal /t REG_DWORD /d 1</span><br></pre></td></tr></table></figure></p>
+<p>64 Bit thì đoạn dưới nha<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Reg add HKLM\SYSTEM\CurrentControlSet\Control\TimeZoneInformation /v RealTimeIsUniversal /t REG_QWORD /d 1</span><br></pre></td></tr></table></figure></p>
+
+      </div>
+      <div class="post-share">Share：</div>
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+          <div></div>
+          <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+            <span>Donation</span>
+          </button>
+          <div id="QR" style="display: none;">
+            <div id="bitcoin" style="display: inline-block">
+              <img id="bitcoin_qr" src="/images/bitcoin.png" alt="" />
+              <p>Bitcoin Donation</p>
+            </div>
           </div>
+        </div>
+      </div>
+      <footer class="post-footer">
         
-        <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-          <header class="post-header">
-            <h2 class="post-title">
+          <div class="post-nav">
+            <div class="post-nav-next post-nav-item">
               
-              <a class="post-title-link" href="../linux-01-dong-bo-thoi-gian/" itemprop="url">
-                <span itemprop="name">Học Linux Cùng HellCatVN [01] | Hướng Dẫn Fix Lỗi Sai Thời Gian Khi Dualboot Windows Và Linux</span>
-              </a>
-              
-            </h2>
-            <div class="post-meta">
-              <time class="post-time" itemprop="dateCreated" datetime="2018-06-02T18:20:32+07:00" content="2018-06-02">
-                06-02
-              </time>
+                <a href="https://hellcatvn.github.io/userscript-02-huong-dan-viet-script/" rel="next" title="UserScripts [02] Hướng Dẫn Viết Script Getlink Nhaccuatui">
+                  <i class="fa fa-chevron-left"></i>
+                  UserScripts [02] Hướng Dẫn Viết Script Getlink Nhaccuatui
+                </a>
+                
             </div>
-          </header>
-        </article>
-     
-        
-        
-        <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-          <header class="post-header">
-            <h2 class="post-title">
+            <span class="post-nav-divider"></span>
+            <div class="post-nav-prev post-nav-item">
               
-              <a class="post-title-link" href="../userscript-02-huong-dan-viet-script/" itemprop="url">
-                <span itemprop="name">UserScripts [02] Hướng Dẫn Viết Script Getlink Nhaccuatui</span>
-              </a>
-              
-            </h2>
-            <div class="post-meta">
-              <time class="post-time" itemprop="dateCreated" datetime="2018-06-01T17:41:05+07:00" content="2018-06-01">
-                06-01
-              </time>
             </div>
-          </header>
-        </article>
-     
-        
-        
-        <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-          <header class="post-header">
-            <h2 class="post-title">
-              
-              <a class="post-title-link" href="../linux-1304-faq-linux/" itemprop="url">
-                <span itemprop="name">Học Linux Cùng HellCatVN [1304] | Những câu hỏi thường gặp khi sử dụng linux</span>
-              </a>
-              
-            </h2>
-            <div class="post-meta">
-              <time class="post-time" itemprop="dateCreated" datetime="2018-05-16T06:11:25+07:00" content="2018-05-16">
-                05-16
-              </time>
-            </div>
-          </header>
-        </article>
-     
-        
-        
-        <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-          <header class="post-header">
-            <h2 class="post-title">
-              
-              <a class="post-title-link" href="../userscript-01-gioi-thieu/" itemprop="url">
-                <span itemprop="name">UserScripts [01] Giới thiệu về UserScripts</span>
-              </a>
-              
-            </h2>
-            <div class="post-meta">
-              <time class="post-time" itemprop="dateCreated" datetime="2018-05-14T08:17:41+07:00" content="2018-05-14">
-                05-14
-              </time>
-            </div>
-          </header>
-        </article>
-     
-        
-        
-        <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-          <header class="post-header">
-            <h2 class="post-title">
-              
-              <a class="post-title-link" href="../userscript-03-get-image-insta/" itemprop="url">
-                <span itemprop="name">UserScripts [03] Userscript Lưu Ảnh Instagram</span>
-              </a>
-              
-            </h2>
-            <div class="post-meta">
-              <time class="post-time" itemprop="dateCreated" datetime="2018-05-06T23:14:33+07:00" content="2018-05-06">
-                05-06
-              </time>
-            </div>
-          </header>
-        </article>
-     
-        
-        
-        <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-          <header class="post-header">
-            <h2 class="post-title">
-              
-              <a class="post-title-link" href="../chat-fuel-01-api-instagram/" itemprop="url">
-                <span itemprop="name">ChatFuel [01] Api Lưu Ảnh Video Công Khai Instagram</span>
-              </a>
-              
-            </h2>
-            <div class="post-meta">
-              <time class="post-time" itemprop="dateCreated" datetime="2018-05-04T22:47:36+07:00" content="2018-05-04">
-                05-04
-              </time>
-            </div>
-          </header>
-        </article>
-     
-        
-        
-        <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-          <header class="post-header">
-            <h2 class="post-title">
-              
-              <a class="post-title-link" href="../hello-world/" itemprop="url">
-                <span itemprop="name">Hello World</span>
-              </a>
-              
-            </h2>
-            <div class="post-meta">
-              <time class="post-time" itemprop="dateCreated" datetime="2018-05-01T09:18:40+07:00" content="2018-05-01">
-                05-01
-              </time>
-            </div>
-          </header>
-        </article>
-    
-  </div>
+          </div>
+          
+      </footer>
+    </div>
+  </article>
+  <div class="comments" id="comments">
+<div id="fb-root"></div>
+<script>(function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v3.0&appId=190302875120198&autoLogAppEvents=1';
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+    <div class="fb-comments" data-href="https://hellcatvn.github.io/linux-01-dong-bo-thoi-gian/" data-numposts="10"></div>
 </div>
-
-<nav class="pagination">
-     <span class="page-number current">1</span>
-</nav>
-
               </section>
             </div>
           </div>

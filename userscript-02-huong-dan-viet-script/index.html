@@ -313,6 +313,11 @@
             <span class="post-nav-divider"></span>
             <div class="post-nav-prev post-nav-item">
               
+                <a href="https://hellcatvn.github.io/linux-01-dong-bo-thoi-gian/" rel="prev" title="Học Linux Cùng HellCatVN [01] | Hướng Dẫn Fix Lỗi Sai Thời Gian Khi Dualboot Windows Và Linux">
+                  Học Linux Cùng HellCatVN [01] | Hướng Dẫn Fix Lỗi Sai Thời Gian Khi Dualboot Windows Và Linux
+                    <i class="fa fa-chevron-right"></i>
+                </a>
+                
             </div>
           </div>
           
@@ -482,26 +487,30 @@
     })    
     </script>
     <script>
-      const ap = new APlayer({
-        container: document.getElementById('aplayer'),
-        mini: true,
-        fixed: true,
-        autoplay: false,
-        loop: 'all',
-        order: 'random',
-        preload: 'auto',
-        volume: 0.7,
-        mutex: true,
-        listFolded: false,
-        listMaxHeight: '90px',
-        lrcType: 0,
-        audio: [{
-          name: 'Be Your EveryThing',
-          artist: 'Boy Like Girls',
-          url: '../mp3/BeYourEverything.mp3',
-          cover: '',
-        }]
-      });
+      $(function () {
+        $.ajax({
+          url: "../music.json",
+          success: function (e) {
+            const ap = new APlayer({
+              container: document.getElementById('aplayer'),
+              mini: true,
+              fixed: true,
+              autoplay: false,
+              loop: 'all',
+              order: 'random',
+              preload: 'auto',
+              volume: 0.7,
+              mutex: true,
+              listFolded: false,
+              listMaxHeight: '90px',
+              lrcType: 0,
+              music:e
+            });
+            window.aplayers || (window.aplayers = []), window.aplayers.push(a)
+          }
+        })
+      })      
+    
     </script>    
 
 <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
@@ -609,4 +618,5 @@
 </script>
 
 </body>
+
 </html>

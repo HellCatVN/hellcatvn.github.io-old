@@ -185,7 +185,7 @@
   <div id="posts" class="posts-collapse">
     <span class="archive-move-on"></span>
     <span class="archive-page-counter">
-      There Are 1 Posts In This Website つ(゜-゜)つ
+      There Are 2 Posts In This Website つ(゜-゜)つ
     </span>
     
      
@@ -195,6 +195,25 @@
           <div class="collection-title">
             <h1 class="archive-year" id="archive-year-2018">2018</h1>
           </div>
+        
+        <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+          <header class="post-header">
+            <h2 class="post-title">
+              
+              <a class="post-title-link" href="../linux-01-dong-bo-thoi-gian/" itemprop="url">
+                <span itemprop="name">Học Linux Cùng HellCatVN [01] | Hướng Dẫn Fix Lỗi Sai Thời Gian Khi Dualboot Windows Và Linux</span>
+              </a>
+              
+            </h2>
+            <div class="post-meta">
+              <time class="post-time" itemprop="dateCreated" datetime="2018-06-02T18:20:32+07:00" content="2018-06-02">
+                06-02
+              </time>
+            </div>
+          </header>
+        </article>
+     
+        
         
         <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
           <header class="post-header">
@@ -371,26 +390,30 @@
     })    
     </script>
     <script>
-      const ap = new APlayer({
-        container: document.getElementById('aplayer'),
-        mini: true,
-        fixed: true,
-        autoplay: false,
-        loop: 'all',
-        order: 'random',
-        preload: 'auto',
-        volume: 0.7,
-        mutex: true,
-        listFolded: false,
-        listMaxHeight: '90px',
-        lrcType: 0,
-        audio: [{
-          name: 'Be Your EveryThing',
-          artist: 'Boy Like Girls',
-          url: '../mp3/BeYourEverything.mp3',
-          cover: '',
-        }]
-      });
+      $(function () {
+        $.ajax({
+          url: "../music.json",
+          success: function (e) {
+            const ap = new APlayer({
+              container: document.getElementById('aplayer'),
+              mini: true,
+              fixed: true,
+              autoplay: false,
+              loop: 'all',
+              order: 'random',
+              preload: 'auto',
+              volume: 0.7,
+              mutex: true,
+              listFolded: false,
+              listMaxHeight: '90px',
+              lrcType: 0,
+              music:e
+            });
+            window.aplayers || (window.aplayers = []), window.aplayers.push(a)
+          }
+        })
+      })      
+    
     </script>    
 
 <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
@@ -498,4 +521,5 @@
 </script>
 
 </body>
+
 </html>
