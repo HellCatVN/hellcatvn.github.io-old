@@ -21,7 +21,12 @@
     
       <link rel="stylesheet" href="/css/APlayer.min.css">
     
+      <link rel="stylesheet" href="/css/pace-theme-minimal.css">
+    
+      <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+    
   
+  <script src='../js/pace.min.js'  type='text/javascript'/>
   <link href="https://fonts.loli.net/css?family=Sigmar One:300,300italic,400,400italic,700,700italic&amp;subset=latin,latin-ext"
         rel="stylesheet" type="text/css">
   <script type="text/javascript">
@@ -187,6 +192,74 @@
   <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
     <div class="post-date">
       <div class="post-month">June</div>
+      <div class="post-day">08</div>
+    </div>
+     
+      <div class="post-badge">
+        
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="#" itemprop="url" rel="index">
+            <span itemprop="name">Python</span>
+          </a>
+        </span>
+        
+      </div>
+     
+    <div class="post-block">
+      <link itemprop="mainEntityOfPage" href="../kslbln-01-python-nct-save-all/">
+      <span hidden="" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+        <meta itemprop="name" content="HellCatVN">
+        <meta itemprop="description" content="">
+        <meta itemprop="image" content="images/hellcatvn.jpg">
+      </span>
+      <span hidden="" itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+        <meta itemprop="name" content="HellCatVN">
+      </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          <a class="post-title-link" href="../kslbln-01-python-nct-save-all/" itemprop="url">KSLBLN [01]  Script Python Tải Tất Cả Thông Tin Bài Hát Nhạc Của Tui</a>
+        </h1>
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Published on</span>
+            <time title="publishedday" itemprop="dateCreated datePublished" datetime="2018-06-08T13:59:47+07:00">2018-06-08</time>
+          </span>
+          <span class="post-category">
+            <span class="post-meta-divider">•</span>
+            <span class="post-meta-item-icon">
+              <i class="fa fa-folder-o"></i>
+            </span>
+            <span class="post-meta-item-text"></span>
+            
+            <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+              <a href="/categories/Nodejs/" itemprop="url" rel="index">
+                <span itemprop="name">Python</span>
+              </a>
+            </span>
+            
+          </span>
+          <span id="kslbln-01-python-nct-save-all" class="leancloud_visitors" data-flag-title="">
+            <span class="post-meta-divider">•</span>
+            <span class="post-meta-item-icon">
+              <i class="fa fa-eye"></i>
+            </span>
+            <span class="post-meta-item-text">Views:</span>
+            <span class="leancloud-visitors-count"></span>
+          </span>
+        </div>
+      </header>
+      <div class="post-body" itemprop="articleBody">
+        <p>Có lẽ bạn thắc mắc series này mang tên [KSLBLN] có nghĩ là gì thì mình xin được giải đáp thêm đó chính là khi sự lười biến lên ngôi<br>Trong series hôm nay thì mình xin Được viết về Nhaccuatui….Vâng chính là nó sau khi làm cái <a href="../userscript-02-huong-dan-viet-script/">UserScript Get Nhaccuatui</a> ,kiếm xong cái player phát nhạc thì phát hiện cái player nó hỗ trợ cả lyric lẫn thumbnail….Nên mình quyết định làm 1 script tự động tải file MP3,Lyric,Thumbnail Theo List Link Nhạc Của Mình Tạo Sẵn<br>
+      </div>
+    </div>
+  </article>
+  
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+    <div class="post-date">
+      <div class="post-month">June</div>
       <div class="post-day">02</div>
     </div>
      
@@ -317,7 +390,12 @@
       <div class="post-body" itemprop="articleBody">
         <p>Bài viết này được viết khi mình đang thêm 1 cái music player cho blog thì down thử 1 bài hát từ nhaccuatui và không được nên làm cái script giúp các bạn có thể dễ dàng download bài hát từ site này về ^^!.Lưu ý là cách này chỉ có nhạc 128 thôi nên chắc nhaccuatui còn lâu mới fix :v<br>Bắt đầu nào:</p>
 <ul>
-<li>Autoplay chuyển bài rồi thôi để play bài Yêu Five (Yêu 5) Lâu rồi chưa nghe.<br>  Link Cho AE <a href="https://www.nhaccuatui.com/bai-hat/yeu-5-rhymastic.KBov6SjzSzzj.html" target="_blank" rel="noopener">https://www.nhaccuatui.com/bai-hat/yeu-5-rhymastic.KBov6SjzSzzj.html</a>
+<li><p>Autoplay chuyển bài rồi thôi để play bài Yêu Five (Yêu 5) Lâu rồi chưa nghe.<br>  Link Cho AE <a href="https://www.nhaccuatui.com/bai-hat/yeu-5-rhymastic.KBov6SjzSzzj.html" target="_blank" rel="noopener">https://www.nhaccuatui.com/bai-hat/yeu-5-rhymastic.KBov6SjzSzzj.html</a></p>
+</li>
+<li><p>Khởi đầu thì mình view-source của nhaccuatui và thấy rằng tại vị trí khởi tạo player của nhaccuatui có vài cái link và mình đã mò thấy cái link dạng XML thế này:<a href="https://www.nhaccuatui.com/flash/xml?html5=true&amp;key1=ef30711e703a77c19177b51a3ed66da8" target="_blank" rel="noopener">https://www.nhaccuatui.com/flash/xml?html5=true&amp;key1=ef30711e703a77c19177b51a3ed66da8</a><br>Khi Vào link này bạn sẽ thấy ….</p>
+</li>
+</ul>
+<a class="fancybox" rel="group" href="/userscript-02-huong-dan-viet-script\1.png"><img src="/userscript-02-huong-dan-viet-script\1.png" alt="1.png" title=""></a>
       </div>
     </div>
   </article>
@@ -385,7 +463,7 @@
         </div>
       </header>
       <div class="post-body" itemprop="articleBody">
-        <p>Ở bài viết này mình sẽ tổng hợp các câu hỏi những lỗi và cách sửa lỗi mình gặp khi sử dụng các Linux Distro. Hiện tại khi viết bài viết này thì mình đang sử dụng Kunbutu 18.04 LTS.Mỗi bài viết trong chủ đề này sẽ giới hạn khoảng 30 câu hỏi và bắt đầu từ số 1304.Vì sao ư :v vì nó là sinh nhật mình đơn giản thế thôi ^^!.Các bạn thoải mái để đặt câu hỏi dưới bình luận cho mình nha mình sẽ tổng hợp và cố trả lời cho các bạn ở dưới bình luận<br><img src="/linux-1304-faq-linux/faq.png" alt="faq.png" title=""><br>
+        <p>Ở bài viết này mình sẽ tổng hợp các câu hỏi những lỗi và cách sửa lỗi mình gặp khi sử dụng các Linux Distro. Hiện tại khi viết bài viết này thì mình đang sử dụng Kunbutu 18.04 LTS.Mỗi bài viết trong chủ đề này sẽ giới hạn khoảng 30 câu hỏi và bắt đầu từ số 1304.Vì sao ư :v vì nó là sinh nhật mình đơn giản thế thôi ^^!.Các bạn thoải mái để đặt câu hỏi dưới bình luận cho mình nha mình sẽ tổng hợp và cố trả lời cho các bạn ở dưới bình luận<br><a class="fancybox" rel="group" href="/linux-1304-faq-linux\faq.png"><img src="/linux-1304-faq-linux\faq.png" alt="faq.png" title=""></a><br>
       </div>
     </div>
   </article>
@@ -455,74 +533,6 @@
       <div class="post-body" itemprop="articleBody">
         <p>Như đã hứa với các bạn ở bài viết về <a href="https://blog.hellcatvn.com/userscript-03-get-image-insta/" target="_blank" rel="noopener">UserScript của Instagram</a> thì mình sẽ giới thiệu với các bạn về userscript</p>
 <p>Bắt đầu với câu hỏi userscript là gì ? Userscript hay còn gọi là user script là đoạn javascript được chèn vào trang web với nhiều mục đích khác nhau trong đó thường là đọc thông tin của web thay đổi cấu trúc web.Có thể xem Userscript là 1 Extension thu nhỏ có thể chạy được trên hầu hết mọi trình duyệt<br>
-      </div>
-    </div>
-  </article>
-  
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <div class="post-date">
-      <div class="post-month">May</div>
-      <div class="post-day">06</div>
-    </div>
-     
-      <div class="post-badge">
-        
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="#" itemprop="url" rel="index">
-            <span itemprop="name">UserScripts</span>
-          </a>
-        </span>
-        
-      </div>
-     
-    <div class="post-block">
-      <link itemprop="mainEntityOfPage" href="../userscript-03-get-image-insta/">
-      <span hidden="" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-        <meta itemprop="name" content="HellCatVN">
-        <meta itemprop="description" content="">
-        <meta itemprop="image" content="images/hellcatvn.jpg">
-      </span>
-      <span hidden="" itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-        <meta itemprop="name" content="HellCatVN">
-      </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          <a class="post-title-link" href="../userscript-03-get-image-insta/" itemprop="url">UserScripts [03] Userscript Lưu Ảnh Instagram</a>
-        </h1>
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">Published on</span>
-            <time title="publishedday" itemprop="dateCreated datePublished" datetime="2018-05-06T23:14:33+07:00">2018-05-06</time>
-          </span>
-          <span class="post-category">
-            <span class="post-meta-divider">•</span>
-            <span class="post-meta-item-icon">
-              <i class="fa fa-folder-o"></i>
-            </span>
-            <span class="post-meta-item-text"></span>
-            
-            <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-              <a href="/categories/Nodejs/" itemprop="url" rel="index">
-                <span itemprop="name">UserScripts</span>
-              </a>
-            </span>
-            
-          </span>
-          <span id="userscript-03-get-image-insta" class="leancloud_visitors" data-flag-title="">
-            <span class="post-meta-divider">•</span>
-            <span class="post-meta-item-icon">
-              <i class="fa fa-eye"></i>
-            </span>
-            <span class="post-meta-item-text">Views:</span>
-            <span class="leancloud-visitors-count"></span>
-          </span>
-        </div>
-      </header>
-      <div class="post-body" itemprop="articleBody">
-        <p>Chuỗi Bài Này Mình Mình Viết Hơi Mất Thứ Tự Tí Do Mình Đang Chuẩn Bị Phần 1 Và Phần 2<br>Như các bạn đã biết thì instagram thường không cho người dùng tải xuống ảnh từ điện thoại kể cả trang web của họ.<br>Hôm trước mình có chia sẽ cách để các bạn có thể download dc ảnh từ điện thoại nhờ chatbot của Facebook Messenger<br>
       </div>
     </div>
   </article>
@@ -667,6 +677,8 @@
   
     <script src="/js/APlayer.min.js"></script>
   
+    <script src="/fancybox/jquery.fancybox.pack.js"></script>
+  
 
     <script>
     $(document).ready(function () {
@@ -707,7 +719,12 @@
           }
         })
       })      
-    </script>    
+    </script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".fancybox").fancybox();
+      });
+    </script>  
 
 <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
 <script>AV.initialize("8yyK153myENY4PL4lfa4W4wc-gzGzoHsz", "IK2SaH7qCFqqvwNJhxkIyQnA");</script>
