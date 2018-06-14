@@ -169,7 +169,7 @@
             </div>
           </div>
           <div class="site-master" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-            <img class="site-master-avatar" itemprop="image" src="https://hellcatvn.github.io/images/hellcatvn.png" alt="HellCatVN">
+            <img class="site-master-avatar" itemprop="image" src="https://blog.hellcatvn.com/images/hellcatvn.png" alt="HellCatVN">
             <h2 class="site-master-description" itemprop="description">
               <span style="color:#3369e8">Write</span>
               <span style="color:#d50f25">the</span>
@@ -270,13 +270,10 @@
       <div class="post-body" itemprop="articleBody">
         <p>Bài viết này được viết khi mình đang thêm 1 cái music player cho blog thì down thử 1 bài hát từ nhaccuatui và không được nên làm cái script giúp các bạn có thể dễ dàng download bài hát từ site này về ^^!.Lưu ý là cách này chỉ có nhạc 128 thôi nên chắc nhaccuatui còn lâu mới fix :v<br>Bắt đầu nào:</p>
 <ul>
-<li><p>Autoplay chuyển bài rồi thôi để play bài Yêu Five (Yêu 5) Lâu rồi chưa nghe.<br>  Link Cho AE <a href="https://www.nhaccuatui.com/bai-hat/yeu-5-rhymastic.KBov6SjzSzzj.html" target="_blank" rel="noopener">https://www.nhaccuatui.com/bai-hat/yeu-5-rhymastic.KBov6SjzSzzj.html</a></p>
-</li>
-<li><p>Khởi đầu thì mình view-source của nhaccuatui và thấy rằng tại vị trí khởi tạo player của nhaccuatui có vài cái link và mình đã mò thấy cái link dạng XML thế này:<a href="https://www.nhaccuatui.com/flash/xml?html5=true&amp;key1=ef30711e703a77c19177b51a3ed66da8" target="_blank" rel="noopener">https://www.nhaccuatui.com/flash/xml?html5=true&amp;key1=ef30711e703a77c19177b51a3ed66da8</a><br>Khi Vào link này bạn sẽ thấy ….</p>
-</li>
+<li>Autoplay chuyển bài rồi thôi để play bài Yêu Five (Yêu 5) Lâu rồi chưa nghe.<br>  Link Cho AE <a href="https://www.nhaccuatui.com/bai-hat/yeu-5-rhymastic.KBov6SjzSzzj.html" target="_blank" rel="noopener">https://www.nhaccuatui.com/bai-hat/yeu-5-rhymastic.KBov6SjzSzzj.html</a><a id="more"></a></li>
+<li>Khởi đầu thì mình view-source của nhaccuatui và thấy rằng tại vị trí khởi tạo player của nhaccuatui có vài cái link và mình đã mò thấy cái link dạng XML thế này:<a href="https://www.nhaccuatui.com/flash/xml?html5=true&amp;key1=ef30711e703a77c19177b51a3ed66da8" target="_blank" rel="noopener">https://www.nhaccuatui.com/flash/xml?html5=true&amp;key1=ef30711e703a77c19177b51a3ed66da8</a><br>Khi Vào link này bạn sẽ thấy ….</li>
 </ul>
 <a class="fancybox" rel="group" href="/userscript-02-huong-dan-viet-script\1.png"><img src="/userscript-02-huong-dan-viet-script\1.png" alt="1.png" title=""></a>
-<a id="more"></a>
 <p>à ko thấy gì cả ngoài chữ “song” có gì đó kì kì tại sao lại config player với chữ này thử view-source tiếp file này nào<br><a class="fancybox" rel="group" href="/userscript-02-huong-dan-viet-script\2.png"><img src="/userscript-02-huong-dan-viet-script\2.png" alt="2.png" title=""></a><br>A đây rồi bạn có thấy gì không chính là thông tin của bài hát bạn đang tìm đó<br>Ở Tag Location là link mp3,Tag Creator là tác giả,Title là tên bài hát,…<br>-Tiếp theo là code thôi<br>Để lấy dc cái link XML Kia thì mình nghĩ Regular Expression (RegEx) là cách nhanh gọn lẹ nhất :3<br>Mình Chọn Công Cụ Debug Là <a href="https://regex101.com/" target="_blank" rel="noopener">https://regex101.com/</a><br>Sau 1 hồi quằng quại thì mình ra được cái kết quả là chuỗi này:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/https:\/\/www.nhaccuatui.com\/flash\/xml\?html5=true&amp;key1=[a-z,0-9]&#123;30,35&#125;/gm</span><br></pre></td></tr></table></figure></p>
 <a class="fancybox" rel="group" href="/userscript-02-huong-dan-viet-script\3.png"><img src="/userscript-02-huong-dan-viet-script\3.png" alt="3.png" title=""></a>
 <p>Kế đến mình viết 1 đoạn script để lấy thử cái link XML từ trang nhaccuatui</p>
@@ -312,7 +309,7 @@
           <div class="post-nav">
             <div class="post-nav-next post-nav-item">
               
-                <a href="https://hellcatvn.github.io/linux-1304-faq-linux/" rel="next" title="Học Linux Cùng HellCatVN [1304] | Những câu hỏi thường gặp khi sử dụng linux">
+                <a href="https://blog.hellcatvn.com/linux-1304-faq-linux/" rel="next" title="Học Linux Cùng HellCatVN [1304] | Những câu hỏi thường gặp khi sử dụng linux">
                   <i class="fa fa-chevron-left"></i>
                   Học Linux Cùng HellCatVN [1304] | Những câu hỏi thường gặp khi sử dụng linux
                 </a>
@@ -321,7 +318,7 @@
             <span class="post-nav-divider"></span>
             <div class="post-nav-prev post-nav-item">
               
-                <a href="https://hellcatvn.github.io/linux-01-dong-bo-thoi-gian/" rel="prev" title="Học Linux Cùng HellCatVN [01] | Hướng Dẫn Fix Lỗi Sai Thời Gian Khi Dualboot Windows Và Linux">
+                <a href="https://blog.hellcatvn.com/linux-01-dong-bo-thoi-gian/" rel="prev" title="Học Linux Cùng HellCatVN [01] | Hướng Dẫn Fix Lỗi Sai Thời Gian Khi Dualboot Windows Và Linux">
                   Học Linux Cùng HellCatVN [01] | Hướng Dẫn Fix Lỗi Sai Thời Gian Khi Dualboot Windows Và Linux
                     <i class="fa fa-chevron-right"></i>
                 </a>
@@ -342,7 +339,7 @@
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
 </script>
-    <div class="fb-comments" data-href="https://hellcatvn.github.io/userscript-02-huong-dan-viet-script/" data-numposts="10"></div>
+    <div class="fb-comments" data-href="https://blog.hellcatvn.com/userscript-02-huong-dan-viet-script/" data-numposts="10"></div>
 </div>
               </section>
             </div>
@@ -359,7 +356,7 @@
               <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
                 <div class="site-overview">
                   <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-                    <img class="site-author-image" itemprop="image" src="https://hellcatvn.github.io/images/catcard.jpg" alt="HellCatVN">
+                    <img class="site-author-image" itemprop="image" src="https://blog.hellcatvn.com/images/catcard.jpg" alt="HellCatVN">
                     <p class="site-author-name" itemprop="name">
                       <span style="opacity:1.2">Hi,</span>I'm HellCatVN</p>
                     <p class="site-description motion-element" itemprop="description">WelCome To My Website</p>
@@ -412,7 +409,7 @@
                                 <div class="cc-license motion-element " itemprop="license ">
                                     <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/ " class="cc-opacity
                         " target="_blank ">
-                                        <img src="https://hellcatvn.github.io/images/cc-by-nc-sa.png " alt="Creative Commons ">
+                                        <img src="https://blog.hellcatvn.com/images/cc-by-nc-sa.png " alt="Creative Commons ">
                                     </a>
                                 </div>
                             </div>
