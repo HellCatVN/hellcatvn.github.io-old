@@ -1,27 +1,26 @@
+var NexT = window.NexT || {};
 // Search Menu
 $('.search-form').submit(function (e) {
   e.preventDefault();
   window.open(`https://www.google.com/search?&q=site%3A${window.location.host}+${encodeURIComponent($('.search-form input[name="keyword"]').val())}`);
 });
 //Site Title
-if (window.CONFIG.favicon.visibilitychange) {
   var OriginTitile = document.title;
   var titleTime;
   document.addEventListener("visibilitychange", function() {
-    if (document.hidden) {
-      $('[rel="icon"]').attr("href", window.CONFIG.favicon.hidden);
-      document.title = window.CONFIG.favicon.hide_text;
+    if (document.visibilityState == "hidden") {
+      $('[rel="icon"]').attr("href", "images/failure.ico");
+      document.title = "(●—●)Pls,Back！";
       clearTimeout(titleTime);
     } else {
-      $('[rel="icon"]').attr("href", window.CONFIG.favicon.narmal);
-      document.title = window.CONFIG.favicon.show_text + OriginTitile;
+      $('[rel="icon"]').attr("href", "images/failure.ico");
+      document.title = "(/≧▽≦/)Welcome Back！" + OriginTitile;
       titleTime = setTimeout(function() {
         document.title = OriginTitile;
       }, 2000);
     }
   });
-}
-/* global NexT: true */
+
 
 NexT.utils = NexT.$u = {
   /**
@@ -237,22 +236,7 @@ NexT.utils = NexT.$u = {
   },
 
   displaySidebar: function () {
-    if (!this.isDesktop() || this.isPisces() || this.isGemini()) {
-      return;
-    }
     $('.sidebar-toggle').trigger('click');
-  },
-
-  isMist: function () {
-    return CONFIG.scheme === 'Mist';
-  },
-
-  isPisces: function () {
-    return CONFIG.scheme === 'Pisces';
-  },
-
-  isGemini: function () {
-    return CONFIG.scheme === 'Gemini';
   },
 
   getScrollbarWidth: function () {
@@ -274,7 +258,7 @@ NexT.utils = NexT.$u = {
 
   getSidebarb2tHeight: function () {
     //var sidebarb2tHeight = (CONFIG.sidebar.b2t) ? document.getElementsByClassName('back-to-top')[0].clientHeight : 0;
-    var sidebarb2tHeight = (CONFIG.sidebar.b2t) ? $('.back-to-top').height() : 0;
+    var sidebarb2tHeight = (false) ? $('.back-to-top').height() : 0;
     //var sidebarb2tHeight = (CONFIG.sidebar.b2t) ? 24 : 0;
     return sidebarb2tHeight;
   },
@@ -283,9 +267,7 @@ NexT.utils = NexT.$u = {
     var sidebarNavHeight = ($('.sidebar-nav').css('display') == 'block') ? $('.sidebar-nav').outerHeight(true) : 0,
         sidebarInner = $('.sidebar-inner'),
         sidebarPadding = sidebarInner.innerWidth() - sidebarInner.width(),
-        sidebarSchemePadding = this.isPisces() || this.isGemini() ?
-          ((sidebarPadding * 2) + sidebarNavHeight + (CONFIG.sidebar.offset * 2) + this.getSidebarb2tHeight()) :
-          ((sidebarPadding * 2) + (sidebarNavHeight / 2));
+        sidebarSchemePadding = ((sidebarPadding * 2) + (sidebarNavHeight / 2));
     return sidebarSchemePadding;
   }
 
