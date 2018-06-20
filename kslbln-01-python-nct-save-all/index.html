@@ -256,8 +256,7 @@
         </div>
       </header>
       <div class="post-body" itemprop="articleBody">
-        <p>Có lẽ bạn thắc mắc series này mang tên [KSLBLN] có nghĩ là gì thì mình xin được giải đáp thêm đó chính là khi sự lười biến lên ngôi<br>Trong series hôm nay thì mình xin Được viết về Nhaccuatui….Vâng chính là nó sau khi làm cái <a href="../userscript-02-huong-dan-viet-script/">UserScript Get Nhaccuatui</a> ,kiếm xong cái player phát nhạc thì phát hiện cái player nó hỗ trợ cả lyric lẫn thumbnail….Nên mình quyết định làm 1 script tự động tải file MP3,Lyric,Thumbnail Theo List Link Nhạc Của Mình Tạo Sẵn<br><a id="more"></a></p>
-<p>Đầu tiên thì vẫn là xuất phát từ file xml mà mình đã nhắc đến ở bài <a href="../userscript-02-huong-dan-viet-script/">Hướng Dẫn Viết UserScript Get Nhaccuatui</a><br>Mình sẽ bắt đầu từ đoạn tải và giải mã khi đã lấy dc các link từ file xml<br>Cơ bản để đọc được file xml thì mình dùng thư viện xmltodict ở dòng 34 và import nó vào ở dòng 5 vậy nên anh em dùng pip cài dùm mình các gói đã import để chạy à còn nữa :v script này chạy trên python 2 và chạy trên linux nha nếu bạn không muốn chạy trên linux thì có thể thay wget thành urllib2.urlopen làm như cách mình lưu ảnh thumbnail để get lyric là dc .<br>Trở lại vấn đề chính có 1 phần nan giải trong đoạn script trên chính là phần lyric đã được nhaccuatui mã hóa và không thể lấy theo cách bình thường…sau khi tìm hiểu 1 tí thì có cái clip làm thủ công thì mình đã tìm cách viết script python để giải mã đoạn lyric.Cũng không có gì khó khăn đoạn script kia mã hóa hex rồi tới rc4crypt + key =&gt; key là Lyr1cjust4nct sau khi tất cả đã xong thì bạn chỉ cần chạy script trên.Những url lưu trong file json listnhac.json</p>
+        <p>Có lẽ bạn thắc mắc series này mang tên [KSLBLN] có nghĩ là gì thì mình xin được giải đáp thêm đó chính là khi sự lười biến lên ngôi<br>Trong series hôm nay thì mình xin Được viết về Nhaccuatui….Vâng chính là nó sau khi làm cái <a href="../userscript-02-huong-dan-viet-script/">UserScript Get Nhaccuatui</a> ,kiếm xong cái player phát nhạc thì phát hiện cái player nó hỗ trợ cả lyric lẫn thumbnail….Nên mình quyết định làm 1 script tự động tải file MP3,Lyric,Thumbnail Theo List Link Nhạc Của Mình Tạo Sẵn<br><a id="more"></a><br>Đầu tiên thì vẫn là xuất phát từ file xml mà mình đã nhắc đến ở bài <a href="../userscript-02-huong-dan-viet-script/">Hướng Dẫn Viết UserScript Get Nhaccuatui</a><br>Mình sẽ bắt đầu từ đoạn tải và giải mã khi đã lấy dc các link từ file xml<br>Cơ bản để đọc được file xml thì mình dùng thư viện xmltodict ở dòng 34 và import nó vào ở dòng 5 vậy nên anh em dùng pip cài dùm mình các gói đã import để chạy à còn nữa :v script này chạy trên python 2 và chạy trên linux nha nếu bạn không muốn chạy trên linux thì có thể thay wget thành urllib2.urlopen làm như cách mình lưu ảnh thumbnail để get lyric là dc .<br>Trở lại vấn đề chính có 1 phần nan giải trong đoạn script trên chính là phần lyric đã được nhaccuatui mã hóa và không thể lấy theo cách bình thường…sau khi tìm hiểu 1 tí thì có cái clip làm thủ công thì mình đã tìm cách viết script python để giải mã đoạn lyric.Cũng không có gì khó khăn đoạn script kia mã hóa hex rồi tới rc4crypt + key =&gt; key là Lyr1cjust4nct sau khi tất cả đã xong thì bạn chỉ cần chạy script trên.Những url lưu trong file json listnhac.json</p>
 <p>Mọi câu hỏi thắc mắc các bạn có thể để lại bình luận phía bên dưới để được giải đáp (Nếu nhiều bạn không chạy được thì mình sẽ làm video clip hướng dẫn).</p>
 <p>Update 20/6/2018</p>
 <p>Đây là bản code dành cho windows Kéo xuống cuối bài nhaaaa &lt;3.</p>
@@ -297,6 +296,11 @@
             <span class="post-nav-divider"></span>
             <div class="post-nav-prev post-nav-item">
               
+                <a href="https://blog.hellcatvn.com/mycroftai-01/" rel="prev" title="Mycroft Ai [01]  Tôi đã đến với mycroft như thế nào?">
+                  Mycroft Ai [01]  Tôi đã đến với mycroft như thế nào?
+                    <i class="fa fa-chevron-right"></i>
+                </a>
+                
             </div>
           </div>
           
