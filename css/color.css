@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #evanyou-canvas {
     position: fixed;
     top: 0px;
@@ -5,4 +6,13 @@
     z-index: -1 !important;
     width: 100%;
     pointer-events: none;
+=======
+#evanyou-canvas {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: -1 !important;
+    width: 100%;
+    pointer-events: none;
+>>>>>>> c7b8eefd66a61123af5158c455335c3b6e4aeca6
 }
