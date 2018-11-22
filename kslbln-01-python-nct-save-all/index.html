@@ -1,0 +1,610 @@
+
+
+<!DOCTYPE html>
+<html lang="">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+  <meta property="fb:app_id" content="190302875120198">
+  <title>KSLBLN [01]  Script Python Tải Tất Cả Thông Tin Bài Hát Nhạc Của Tui [ HellCatVN ]</title>
+  
+    <!-- stylesheets list from config.yml -->
+    
+      <link rel="stylesheet" href="/css/font-awesome.min.css">
+    
+      <link rel="stylesheet" href="/css/font-awesome-animation.min.css">
+    
+      <link rel="stylesheet" href="/css/main.css">
+    
+      <link rel="stylesheet" href="/css/share.min.css">
+    
+      <link rel="stylesheet" href="/css/hellcatvn.css">
+    
+      <link rel="stylesheet" href="/css/APlayer.min.css">
+    
+      <link rel="stylesheet" href="/css/pace-theme-minimal.css">
+    
+      <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+    
+  
+  <script src="../js/pace.min.js" type="text/javascript">
+  <link href="https://fonts.loli.net/css?family=Sigmar One:300,300italic,400,400italic,700,700italic&amp;subset=latin,latin-ext"
+        rel="stylesheet" type="text/css">
+  <script type="text/javascript">
+    var NexT = window.NexT || {}
+  </script>
+  
+</head>
+<body class="theme-darling">
+    <div class="container sidebar-position-right page-home">
+      <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+        <div class="header-inner">
+          <nav class="site-nav">
+            <ul id="menu" class="menu">
+              
+              <li class="menu-item menu-item">
+                
+                <a href="/ " rel="section">
+                  
+                  <i class="menu-item-icon fa fa-fw fa-home"></i>
+                  <br> 
+                  <br>Home</a>
+              </li>
+              
+              <li class="menu-item menu-item">
+                
+                <a href="/archives " rel="section">
+                  
+                  <i class="menu-item-icon fa fa-fw fa-archive"></i>
+                  <br> 
+                  <br>Archives</a>
+              </li>
+              
+              <li class="menu-item menu-item">
+                
+                <a href="/lab " rel="section">
+                  
+                  <i class="menu-item-icon fa fa-fw fa-flask"></i>
+                  <br> 
+                  <br>Laboratory</a>
+              </li>
+              
+              <li class="menu-item menu-item">
+                
+                <a href="/donate " rel="section">
+                  
+                  <i class="menu-item-icon fa fa-fw fa-cutlery"></i>
+                  <br> 
+                  <br>Donate</a>
+              </li>
+              
+              <li class="menu-item menu-item">
+                
+                <a href="/friends " rel="section">
+                  
+                  <i class="menu-item-icon fa fa-fw fa-mars"></i>
+                  <br> 
+                  <br>Friends</a>
+              </li>
+              
+              <li class="menu-item menu-item">
+                
+                <a href="/messages " rel="section">
+                  
+                  <i class="menu-item-icon fa fa-fw fa-pencil"></i>
+                  <br> 
+                  <br>Messages</a>
+              </li>
+              
+              <li class="menu-item menu-item">
+                
+                <a href="/about-me " rel="section">
+                  
+                  <i class="menu-item-icon fa fa-fw fa-rocket"></i>
+                  <br> 
+                  <br>About Me</a>
+              </li>
+              
+              <li class="menu-item search">
+                  <form class="search-form">
+                      <input name="keyword" type="text" class="search-input" placeholder="Keyword">
+                      <button type="submit" class="search-submit">
+                          <i class="fa fa-search"></i>
+                      </button>
+                  </form>
+              </li>
+              <li class="menu-item online">
+                <span id="online-count">22</span> Onl
+              </li>
+            </ul>
+          </nav>
+          <div class="site-brand-wrapper" style="background-image:url(images/header-darlings.jpg)">
+            <div class="site-meta">
+              <div class="custom-logo-site-title">
+                <div class="brand">
+                  <span class="logo-line-before">
+                    <i></i>
+                  </span>
+                  <div class="site-title">
+                    <div id="animate" class="animate">
+                      <span>W</span>
+                      <span>e</span>
+                      <span>l</span>
+                      <span>c</span>
+                      <span>o</span>
+                      <span>m</span>
+                      <span>e</span>
+                    </div>
+                    <div id="guide" class="guide">
+                      <span>W</span>
+                      <span>e</span>
+                      <span>l</span>
+                      <span>c</span>
+                      <span>o</span>
+                      <span>m</span>
+                      <span>e</span>
+                    </div>
+                  </div>
+                  <span class="logo-line-after">
+                    <i></i>
+                  </span>
+                </div>
+              </div>
+              <p class="site-subtitle"></p>
+            </div>
+            <div class="site-nav-toggle">
+              <button>
+                <span class="btn-bar"></span>
+                <span class="btn-bar"></span>
+                <span class="btn-bar"></span>
+              </button>
+            </div>
+          </div>
+          <div class="site-master" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            <img class="site-master-avatar" itemprop="image" src="https://blog.hellcatvn.com/images/hellcatvn.png" alt="HellCatVN">
+            <h2 class="site-master-description" itemprop="description">
+              <span style="color:#3369e8">Write</span>
+              <span style="color:#d50f25">the</span>
+              <span style="color:#eeb211">Code,</span>
+              <span style="color:#3369e8">Change</span>
+              <span style="color:#009925">the</span>
+              <span style="color:#d50f25">World.</span>
+            </h2>
+          </div>
+        </div>
+      </header>
+      <main id="main" class="main">
+        <div class="main-inner">
+          <div class="content-wrap">
+            <div id="content" class="content">
+              <section id="posts" class="posts-expand">
+                
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+    <div class="post-date">
+      <div class="post-month">
+        June
+      </div>
+      <div class="post-day">
+        08
+      </div>
+    </div>
+    
+      <div class="post-badge">
+        
+          <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+            <a href="#" itemprop="url" rel="index">
+              <span itemprop="name">
+                Python
+              </span>
+            </a>
+          </span>
+          
+          
+      </div>
+      
+    <div class="post-block">
+      <link itemprop="mainEntityOfPage" href="../kslbln-01-python-nct-save-all/">
+      <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+        <meta itemprop="name" content="HellCatVN">
+        <meta itemprop="description" content="">
+        <meta itemprop="image" content="images/DIYgod.jpg">
+      </span>
+      <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+        <meta itemprop="name" content="HellCatVN">
+      </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          <a class="post-title-link" href="../kslbln-01-python-nct-save-all/" itemprop="url">
+            KSLBLN [01]  Script Python Tải Tất Cả Thông Tin Bài Hát Nhạc Của Tui
+          </a>
+        </h1>
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Published on</span>
+            <time title="publishedday" itemprop="dateCreated datePublished" datetime="2018-06-08T13:59:47+07:00">
+              2018-06-08
+            </time>
+          </span>
+          <span class="post-category">
+            <span class="post-meta-divider">•</span>
+            <span class="post-meta-item-icon">
+              <i class="fa fa-folder-o"></i>
+            </span>
+            <span class="post-meta-item-text">
+              
+            </span>
+            
+              <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                <a href="/categories/Nodejs/" itemprop="url" rel="index">
+                  <span itemprop="name">
+                    Python
+                  </span>
+                </a>
+              </span>
+              
+          </span>
+          <span id="kslbln-01-python-nct-save-all" class="leancloud_visitors" data-flag-title="">
+            <span class="post-meta-divider">•</span>
+            <span class="post-meta-item-icon">
+              <i class="fa fa-eye"></i>
+            </span>
+            <span class="post-meta-item-text">Views:</span>
+            <span class="leancloud-visitors-count"></span>
+          </span>
+        </div>
+      </header>
+      <div class="post-body" itemprop="articleBody">
+        <p>Có lẽ bạn thắc mắc series này mang tên [KSLBLN] có nghĩ là gì thì mình xin được giải đáp thêm đó chính là khi sự lười biến lên ngôi<br>Trong series hôm nay thì mình xin Được viết về Nhaccuatui….Vâng chính là nó sau khi làm cái <a href="../userscript-02-huong-dan-viet-script/">UserScript Get Nhaccuatui</a> ,kiếm xong cái player phát nhạc thì phát hiện cái player nó hỗ trợ cả lyric lẫn thumbnail….Nên mình quyết định làm 1 script tự động tải file MP3,Lyric,Thumbnail Theo List Link Nhạc Của Mình Tạo Sẵn<br><a id="more"></a><br>Đầu tiên thì vẫn là xuất phát từ file xml mà mình đã nhắc đến ở bài <a href="../userscript-02-huong-dan-viet-script/">Hướng Dẫn Viết UserScript Get Nhaccuatui</a><br>Mình sẽ bắt đầu từ đoạn tải và giải mã khi đã lấy dc các link từ file xml<br>Cơ bản để đọc được file xml thì mình dùng thư viện xmltodict ở dòng 34 và import nó vào ở dòng 5 vậy nên anh em dùng pip cài dùm mình các gói đã import để chạy à còn nữa :v script này chạy trên python 2 và chạy trên linux nha nếu bạn không muốn chạy trên linux thì có thể thay wget thành urllib2.urlopen làm như cách mình lưu ảnh thumbnail để get lyric là dc .<br>Trở lại vấn đề chính có 1 phần nan giải trong đoạn script trên chính là phần lyric đã được nhaccuatui mã hóa và không thể lấy theo cách bình thường…sau khi tìm hiểu 1 tí thì có cái clip làm thủ công thì mình đã tìm cách viết script python để giải mã đoạn lyric.Cũng không có gì khó khăn đoạn script kia mã hóa hex rồi tới rc4crypt + key =&gt; key là Lyr1cjust4nct sau khi tất cả đã xong thì bạn chỉ cần chạy script trên.Những url lưu trong file json listnhac.json</p>
+<p>Mọi câu hỏi thắc mắc các bạn có thể để lại bình luận phía bên dưới để được giải đáp (Nếu nhiều bạn không chạy được thì mình sẽ làm video clip hướng dẫn).</p>
+<p>Update 20/6/2018</p>
+<p>Đây là bản code dành cho windows Kéo xuống cuối bài nhaaaa &lt;3.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python +tenfile.py</span><br></pre></td></tr></table></figure>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">[</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">"url"</span> : <span class="string">"https://www.nhaccuatui.com/bai-hat/be-your-everything-boys-like-girls.svT3AyrSuwDu.html"</span></span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">"url"</span> : <span class="string">"https://www.nhaccuatui.com/bai-hat/yeu-5-hoaprox-remix-rhymastic-ft-hoaprox.M3U0CaCWI4ig.html"</span></span><br><span class="line">    &#125;</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+<p>Script Lấy Nhạc</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">import</span> urllib2</span><br><span class="line"><span class="keyword">import</span> json</span><br><span class="line"><span class="keyword">import</span> xmltodict</span><br><span class="line"><span class="keyword">import</span> os</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">rc4crypt</span><span class="params">(data, key)</span>:</span></span><br><span class="line">    x = <span class="number">0</span></span><br><span class="line">    box = range(<span class="number">256</span>)</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">256</span>):</span><br><span class="line">        x = (x + box[i] + ord(key[i % len(key)])) % <span class="number">256</span></span><br><span class="line">        box[i], box[x] = box[x], box[i]</span><br><span class="line">    x = <span class="number">0</span></span><br><span class="line">    y = <span class="number">0</span></span><br><span class="line">    out = []</span><br><span class="line">    <span class="keyword">for</span> char <span class="keyword">in</span> data:</span><br><span class="line">        x = (x + <span class="number">1</span>) % <span class="number">256</span></span><br><span class="line">        y = (y + box[x]) % <span class="number">256</span></span><br><span class="line">        box[x], box[y] = box[y], box[x]</span><br><span class="line">        out.append(chr(ord(char) ^ box[(box[x] + box[y]) % <span class="number">256</span>]))</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="string">''</span>.join(out)</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">createJson</span><span class="params">(url)</span>:</span></span><br><span class="line">    response = urllib2.urlopen(url)</span><br><span class="line">    pagecontent=response.read().decode(<span class="string">'utf-8'</span>)</span><br><span class="line">    pattern = <span class="string">'https:\/\/www.nhaccuatui.com\/flash\/xml\?html5=true&amp;key1=[a-z,0-9]&#123;30,35&#125;'</span></span><br><span class="line">    result = re.findall(pattern, pagecontent)</span><br><span class="line">    response = urllib2.urlopen(result[<span class="number">0</span>])</span><br><span class="line">    pagecontent=response.read().decode(<span class="string">'utf-8'</span>)</span><br><span class="line"></span><br><span class="line">    data = xmltodict.parse(pagecontent)</span><br><span class="line"></span><br><span class="line">    tracklistInside = data[<span class="string">'tracklist'</span>][<span class="string">'track'</span>]</span><br><span class="line"></span><br><span class="line">    songLink = data[<span class="string">'tracklist'</span>][<span class="string">'track'</span>][<span class="string">'location'</span>]</span><br><span class="line">    lyricLink = data[<span class="string">'tracklist'</span>][<span class="string">'track'</span>][<span class="string">'lyric'</span>]</span><br><span class="line">    picLink = data[<span class="string">'tracklist'</span>][<span class="string">'track'</span>][<span class="string">'avatar'</span>]</span><br><span class="line"></span><br><span class="line">    <span class="keyword">print</span> (lyricLink)</span><br><span class="line"></span><br><span class="line">    <span class="comment">#save MP3 File</span></span><br><span class="line">    response = urllib2.urlopen(songLink)</span><br><span class="line">    fileMp3 = response.read()</span><br><span class="line">    f = open(<span class="string">'mp3/'</span>+data[<span class="string">'tracklist'</span>][<span class="string">'track'</span>][<span class="string">'title'</span>], <span class="string">'wb'</span>)</span><br><span class="line">    f.write(fileMp3)</span><br><span class="line">    f.close()</span><br><span class="line"></span><br><span class="line">    <span class="comment">#save pic File</span></span><br><span class="line">    response = urllib2.urlopen(picLink)</span><br><span class="line">    filePic = response.read()</span><br><span class="line">    f = open(<span class="string">'pic/'</span>+data[<span class="string">'tracklist'</span>][<span class="string">'track'</span>][<span class="string">'title'</span>], <span class="string">'wb'</span>)</span><br><span class="line">    f.write(filePic)</span><br><span class="line">    f.close()</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> lyricLink <span class="keyword">is</span> <span class="keyword">not</span> <span class="keyword">None</span>:</span><br><span class="line">        os.system(<span class="string">'wget '</span> + lyricLink + <span class="string">' -O lyric/encrypted'</span>)</span><br><span class="line">        </span><br><span class="line">        lyricencrypted = open(<span class="string">'lyric/encrypted'</span>).readline()</span><br><span class="line"></span><br><span class="line">        lyricdecrypted = rc4crypt(lyricencrypted.decode(<span class="string">'hex'</span>), <span class="string">'Lyr1cjust4nct'</span>)</span><br><span class="line"></span><br><span class="line">        f = open(<span class="string">'lyric/'</span>+data[<span class="string">'tracklist'</span>][<span class="string">'track'</span>][<span class="string">'title'</span>], <span class="string">'wb'</span>)</span><br><span class="line">        f.write(lyricdecrypted)</span><br><span class="line">        f.close()</span><br><span class="line">    </span><br><span class="line">    jsondata = json.load(open(<span class="string">'music.json'</span>))</span><br><span class="line"></span><br><span class="line">    res = &#123;&#125;</span><br><span class="line"></span><br><span class="line">    res[<span class="string">'title'</span>] =  data[<span class="string">'tracklist'</span>][<span class="string">'track'</span>][<span class="string">'title'</span>]</span><br><span class="line">    res[<span class="string">'author'</span>] =  data[<span class="string">'tracklist'</span>][<span class="string">'track'</span>][<span class="string">'creator'</span>]</span><br><span class="line">    res[<span class="string">'url'</span>] =  <span class="string">"../mp3/"</span>+data[<span class="string">'tracklist'</span>][<span class="string">'track'</span>][<span class="string">'title'</span>]</span><br><span class="line">    res[<span class="string">'pic'</span>] =  <span class="string">"../pic/"</span>+data[<span class="string">'tracklist'</span>][<span class="string">'track'</span>][<span class="string">'title'</span>]</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> lyricLink <span class="keyword">is</span> <span class="keyword">not</span> <span class="keyword">None</span>:</span><br><span class="line">        res[<span class="string">'lrc'</span>] =  <span class="string">"../lyric/"</span>+data[<span class="string">'tracklist'</span>][<span class="string">'track'</span>][<span class="string">'title'</span>]</span><br><span class="line">    </span><br><span class="line">    jsondata.append(res)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">with</span> open(<span class="string">'music.json'</span>, <span class="string">'w'</span>) <span class="keyword">as</span> outfile:</span><br><span class="line">        json.dump(jsondata, outfile)</span><br><span class="line"></span><br><span class="line">data = json.load(open(<span class="string">'listnhac.json'</span>))</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> val <span class="keyword">in</span> data:</span><br><span class="line">    createJson(val[<span class="string">'url'</span>])</span><br></pre></td></tr></table></figure>
+<p>Code Dành Cho Bản Win</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">import</span> urllib2</span><br><span class="line"><span class="keyword">import</span> json</span><br><span class="line"><span class="keyword">import</span> xmltodict</span><br><span class="line"><span class="keyword">import</span> os</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">rc4crypt</span><span class="params">(data, key)</span>:</span></span><br><span class="line">    x = <span class="number">0</span></span><br><span class="line">    box = range(<span class="number">256</span>)</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">256</span>):</span><br><span class="line">        x = (x + box[i] + ord(key[i % len(key)])) % <span class="number">256</span></span><br><span class="line">        box[i], box[x] = box[x], box[i]</span><br><span class="line">    x = <span class="number">0</span></span><br><span class="line">    y = <span class="number">0</span></span><br><span class="line">    out = []</span><br><span class="line">    <span class="keyword">for</span> char <span class="keyword">in</span> data:</span><br><span class="line">        x = (x + <span class="number">1</span>) % <span class="number">256</span></span><br><span class="line">        y = (y + box[x]) % <span class="number">256</span></span><br><span class="line">        box[x], box[y] = box[y], box[x]</span><br><span class="line">        out.append(chr(ord(char) ^ box[(box[x] + box[y]) % <span class="number">256</span>]))</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="string">''</span>.join(out)</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">createJson</span><span class="params">(url)</span>:</span></span><br><span class="line">    response = urllib2.urlopen(url)</span><br><span class="line">    pagecontent=response.read().decode(<span class="string">'utf-8'</span>)</span><br><span class="line">    pattern = <span class="string">'https:\/\/www.nhaccuatui.com\/flash\/xml\?html5=true&amp;key1=[a-z,0-9]&#123;30,35&#125;'</span></span><br><span class="line">    result = re.findall(pattern, pagecontent)</span><br><span class="line">    response = urllib2.urlopen(result[<span class="number">0</span>])</span><br><span class="line">    pagecontent=response.read().decode(<span class="string">'utf-8'</span>)</span><br><span class="line"></span><br><span class="line">    data = xmltodict.parse(pagecontent)</span><br><span class="line"></span><br><span class="line">    tracklistInside = data[<span class="string">'tracklist'</span>][<span class="string">'track'</span>]</span><br><span class="line"></span><br><span class="line">    songLink = data[<span class="string">'tracklist'</span>][<span class="string">'track'</span>][<span class="string">'location'</span>]</span><br><span class="line">    lyricLink = data[<span class="string">'tracklist'</span>][<span class="string">'track'</span>][<span class="string">'lyric'</span>]</span><br><span class="line">    picLink = data[<span class="string">'tracklist'</span>][<span class="string">'track'</span>][<span class="string">'avatar'</span>]</span><br><span class="line"></span><br><span class="line">    <span class="keyword">print</span> (lyricLink)</span><br><span class="line"></span><br><span class="line">    <span class="comment">#save MP3 File</span></span><br><span class="line">    response = urllib2.urlopen(songLink)</span><br><span class="line">    fileMp3 = response.read()</span><br><span class="line">    f = open(<span class="string">'mp3/'</span>+data[<span class="string">'tracklist'</span>][<span class="string">'track'</span>][<span class="string">'title'</span>], <span class="string">'wb'</span>)</span><br><span class="line">    f.write(fileMp3)</span><br><span class="line">    f.close()</span><br><span class="line"></span><br><span class="line">    <span class="comment">#save pic File</span></span><br><span class="line">    response = urllib2.urlopen(picLink)</span><br><span class="line">    filePic = response.read()</span><br><span class="line">    f = open(<span class="string">'pic/'</span>+data[<span class="string">'tracklist'</span>][<span class="string">'track'</span>][<span class="string">'title'</span>], <span class="string">'wb'</span>)</span><br><span class="line">    f.write(filePic)</span><br><span class="line">    f.close()</span><br><span class="line"></span><br><span class="line">    <span class="comment">#Save and Decrypt Lyric</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> lyricLink <span class="keyword">is</span> <span class="keyword">not</span> <span class="keyword">None</span>:</span><br><span class="line"></span><br><span class="line">        response = urllib2.urlopen(lyricLink)</span><br><span class="line">        filelyric = response.read()</span><br><span class="line">        f = open(<span class="string">'lyric/encrypted'</span>, <span class="string">'wb'</span>)</span><br><span class="line">        f.write(filelyric)</span><br><span class="line">        f.close()    </span><br><span class="line"></span><br><span class="line">        lyricencrypted = open(<span class="string">'lyric/encrypted'</span>).readline()</span><br><span class="line"></span><br><span class="line">        lyricdecrypted = rc4crypt(lyricencrypted.decode(<span class="string">'hex'</span>), <span class="string">'Lyr1cjust4nct'</span>)</span><br><span class="line"></span><br><span class="line">        f = open(<span class="string">'lyric/'</span>+data[<span class="string">'tracklist'</span>][<span class="string">'track'</span>][<span class="string">'title'</span>], <span class="string">'wb'</span>)</span><br><span class="line">        f.write(lyricdecrypted)</span><br><span class="line">        f.close()   </span><br><span class="line"></span><br><span class="line">    jsondata = json.load(open(<span class="string">'music.json'</span>))</span><br><span class="line"></span><br><span class="line">    res = &#123;&#125;</span><br><span class="line"></span><br><span class="line">    res[<span class="string">'title'</span>] =  data[<span class="string">'tracklist'</span>][<span class="string">'track'</span>][<span class="string">'title'</span>]</span><br><span class="line">    res[<span class="string">'author'</span>] =  data[<span class="string">'tracklist'</span>][<span class="string">'track'</span>][<span class="string">'creator'</span>]</span><br><span class="line">    res[<span class="string">'url'</span>] =  <span class="string">"../mp3/"</span>+data[<span class="string">'tracklist'</span>][<span class="string">'track'</span>][<span class="string">'title'</span>]</span><br><span class="line">    res[<span class="string">'pic'</span>] =  <span class="string">"../pic/"</span>+data[<span class="string">'tracklist'</span>][<span class="string">'track'</span>][<span class="string">'title'</span>]</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> lyricLink <span class="keyword">is</span> <span class="keyword">not</span> <span class="keyword">None</span>:</span><br><span class="line">        res[<span class="string">'lrc'</span>] =  <span class="string">"../lyric/"</span>+data[<span class="string">'tracklist'</span>][<span class="string">'track'</span>][<span class="string">'title'</span>]</span><br><span class="line">    </span><br><span class="line"></span><br><span class="line">    jsondata.append(res)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">with</span> open(<span class="string">'music.json'</span>, <span class="string">'w'</span>) <span class="keyword">as</span> outfile:</span><br><span class="line">        json.dump(jsondata, outfile)</span><br><span class="line"></span><br><span class="line">data = json.load(open(<span class="string">'listnhac.json'</span>))</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> val <span class="keyword">in</span> data:</span><br><span class="line">    createJson(val[<span class="string">'url'</span>])</span><br></pre></td></tr></table></figure>
+      </div>
+      <div class="post-share">Share：</div>
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+          <div></div>
+          <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+            <span>Donation</span>
+          </button>
+          <div id="QR" style="display: none;">
+            <div id="bitcoin" style="display: inline-block">
+              <img id="bitcoin_qr" src="/images/bitcoin.png" alt="">
+              <p>Bitcoin Donation</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="post-footer">
+        
+          <div class="post-nav">
+            <div class="post-nav-next post-nav-item">
+              
+                <a href="https://blog.hellcatvn.com/linux-01-dong-bo-thoi-gian/" rel="next" title="Học Linux Cùng HellCatVN [01] | Hướng Dẫn Fix Lỗi Sai Thời Gian Khi Dualboot Windows Và Linux">
+                  <i class="fa fa-chevron-left"></i>
+                  Học Linux Cùng HellCatVN [01] | Hướng Dẫn Fix Lỗi Sai Thời Gian Khi Dualboot Windows Và Linux
+                </a>
+                
+            </div>
+            <span class="post-nav-divider"></span>
+            <div class="post-nav-prev post-nav-item">
+              
+                <a href="https://blog.hellcatvn.com/mycroftai-01/" rel="prev" title="Mycroft Ai [01]  Tôi đã đến với mycroft như thế nào?">
+                  Mycroft Ai [01]  Tôi đã đến với mycroft như thế nào?
+                    <i class="fa fa-chevron-right"></i>
+                </a>
+                
+            </div>
+          </div>
+          
+      </footer>
+    </div>
+  </article>
+  <div class="comments" id="comments">
+<div id="fb-root"></div>
+<script>(function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v3.0&appId=190302875120198&autoLogAppEvents=1';
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+    <div class="fb-comments" data-href="https://blog.hellcatvn.com/kslbln-01-python-nct-save-all/" data-numposts="10"></div>
+</div>
+              </section>
+            </div>
+          </div>
+          <div class="sidebar-toggle">
+            <div class="sidebar-toggle-line-wrap">
+              <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+              <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+              <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+            </div>
+          </div>
+          <aside id="sidebar" class="sidebar">
+            <div class="sidebar-inner affix-top" style="">
+              <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+                <div class="site-overview">
+                  <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+                    <img class="site-author-image" itemprop="image" src="https://blog.hellcatvn.com/images/catcard.jpg" alt="HellCatVN">
+                    <p class="site-author-name" itemprop="name">
+                      <span style="opacity:1.2">Hi,</span>I'm HellCatVN</p>
+                    <p class="site-description motion-element" itemprop="description">WelCome To My Website</p>
+                  </div>
+                  <div class="links-of-author motion-element">
+                    <span class="links-of-author-item">
+                      <a href="https://github.com/HellCatVN" target="_blank" title="GitHub" data-balloon="GitHub" data-balloon-pos="up">
+                        <i class="fa fa-fw fa-github"></i>
+                      </a>
+                    </span>
+                    <span class="links-of-author-item">
+                      <a href="#" target="_blank" title="Twitter" data-balloon="Twitter" data-balloon-pos="up">
+                        <i class="fa fa-fw fa-twitter"></i>
+                      </a>
+                    </span>
+                    <span class="links-of-author-item">
+                      <a href="https://m.me/veroiobot" target="_blank" title="Messenger" data-balloon="Messenger" data-balloon-pos="up">
+                        <i class="fa fa-fw fa-facebook"></i>
+                      </a>
+                    </span>
+                    <span class="links-of-author-item">
+                      <a href="#" target="_blank" title="Telegram Channel" data-balloon="Telegram Channel" data-balloon-pos="up">
+                        <i class="fa fa-fw fa-telegram"></i>
+                      </a>
+                    </span>
+                    <span class="links-of-author-item">
+                      <a href="# target=" _blank="" "="" title="Other " data-balloon="Other " data-balloon-pos="up">
+                                            <i class="fa fa-fw fa-more "></i>
+                                        </a>
+                                    </span>
+                                </div>
+                                <div class="feed-link motion-element ">
+                                    <a href="/atom.xml " rel="alternate ">
+                                        <i class="fa fa-rss "></i> RSS</a>
+                                </div>
+                                <nav class="site-state motion-element ">
+                                    <div class="site-state-item site-state-posts ">
+                                        <a href="/archives ">
+                                            <span class="site-state-item-count ">46</span>
+                                            <span class="site-state-item-name ">Project Complete</span>
+                                        </a>
+                                    </div>
+                                    <div class="site-state-item site-state-categories ">
+                                        <a href="/categories/index.html ">
+                                            <span class="site-state-item-count ">5</span>
+                                            <span class="site-state-item-name ">Progarming Languages</span>
+                                        </a>
+                                    </div>
+                                </nav>
+                                <div class="cc-license motion-element " itemprop="license ">
+                                    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/ " class="cc-opacity
+                        " target="_blank ">
+                                        <img src="https://blog.hellcatvn.com/images/cc-by-nc-sa.png " alt="Creative Commons ">
+                                    </a>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </aside>
+        </div>
+        </main>
+        <footer id="footer " class="footer ">
+            <div class="footer-image "></div>
+            <div class="footer-inner ">
+                <p>Blog has sprouted
+                    <span id="since ">25-12-2015</span>
+                    <span class="my-face ">(●'◡'●)ﾉ♥</span>
+                </p>
+                <p>Hosted on
+                    <a href="https://github.com/ " target="_blank " rel="nofollow "> GitHub</a>.
+                    <a href="http://www.google.com/analytics/ " target="_blank " rel="nofollow ">Google Analytics </a>Provide website statistics service.
+                    <a href="https://www.cloudflare.com/ " target="_blank " rel="nofollow ">CloudFlare </a>Provide DNS resolution service
+                </p><p>©
+                    <span itemprop="copyrightYear ">2018</span> Hi, I'm HellCatVN|Theme By
+                    <a href="https://github.com/theme-next/hexo-theme-next" target="_blank " class="external " rel="nofollow ">NexT</a> v0.0.16.
+                    <a href="../sitemap.xml " target="_blank ">SiteMap</a></p>
+                <p>Made with
+                    <i class="fa fa-heart faa-pulse animated " style="color:#d43f57 "></i> by
+                    <span class="author " itemprop="copyrightHolder ">HellCatVN</span>.</p>
+            </div>
+        </footer>
+        <canvas id="evanyou-canvas"></canvas>
+        <div id="aplayer"></div>
+        <div class="back-to-top active " style="top: -900px; ">
+            <i class="fa fa-arrow-up "></i>
+        </div>
+        </div>
+        
+
+  <!-- scripts list from theme config.yml -->
+  
+    <script src="/js/jquery-3.3.1.min.js"></script>
+  
+    <script src="/js/jquery.gsap.min.js"></script>
+  
+    <script src="/js/plugins/CSSPlugin.min.js"></script>
+  
+    <script src="/js/TweenLite.min.js"></script>
+  
+    <script src="/js/utils/Draggable.min.js"></script>
+  
+    <script src="/js/easing/EasePack.min.js"></script>
+  
+    <script src="/js/lazyload.js"></script>
+  
+    <script src="/js/moment.min.js"></script>
+  
+    <script src="/js/headroom.js"></script>
+  
+    <script src="/js/hellcatvn.js"></script>
+  
+    <script src="/js/jquery.share.min.js"></script>
+  
+    <script src="/js/color.js"></script>
+  
+    <script src="/js/APlayer.min.js"></script>
+  
+    <script src="/fancybox/jquery.fancybox.pack.js"></script>
+  
+
+    <script>
+    $(document).ready(function () {
+      function share() {
+        if ($(".post-share").length) {
+          $(".post-share").share({
+            disabled: ['douban','diandian'],
+            wechatQrcodeTitle: "WeChat Scan",
+            wechatQrcodeHelper: "<p>WeChat scan, share in the upper right corner</p>",
+            source: "HellCatVN Blog"
+          });
+        }
+      }
+      share();
+    })    
+    </script>
+    <script>
+      $(function () {
+        $.ajax({
+          url: "../music.json",
+          success: function (e) {
+            const ap = new APlayer({
+              container: document.getElementById('aplayer'),
+              mini: true,
+              fixed: true,
+              autoplay: false,
+              loop: 'all',
+              order: 'random',
+              preload: 'auto',
+              volume: 0.7,
+              mutex: true,
+              listFolded: false,
+              listMaxHeight: '320px',
+              lrcType: 3,
+              music:e
+            });
+            window.aplayers || (window.aplayers = []), window.aplayers.push(a)
+          }
+        })
+      })      
+    </script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".fancybox").fancybox();
+      });
+    </script>  
+
+<script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+<script>AV.initialize("8yyK153myENY4PL4lfa4W4wc-gzGzoHsz", "IK2SaH7qCFqqvwNJhxkIyQnA");</script>
+<script>
+    function showTime(Counter) {
+        var query = new AV.Query(Counter);
+        var entries = [];
+        var $visitors = $(".leancloud_visitors");
+
+        $visitors.each(function () {
+            entries.push($(this).attr("id").trim());
+        });
+
+        query.containedIn('url', entries);
+        query.find()
+            .done(function (results) {
+                var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+                if (results.length === 0) {
+                    $visitors.find(COUNT_CONTAINER_REF).text(0);
+                    return;
+                }
+
+                for (var i = 0; i < results.length; i++) {
+                    var item = results[i];
+                    var url = item.get('url');
+                    var time = item.get('time');
+                    var element = document.getElementById(url);
+
+                    $(element).find(COUNT_CONTAINER_REF).text(time);
+                }
+                for (var i = 0; i < entries.length; i++) {
+                    var url = entries[i];
+                    var element = document.getElementById(url);
+                    var countSpan = $(element).find(COUNT_CONTAINER_REF);
+                    if (countSpan.text() == '') {
+                        countSpan.text(0);
+                    }
+                }
+            })
+            .fail(function (object, error) {
+                console.log("Error: " + error.code + " " + error.message);
+            });
+    }
+
+    function addCount(Counter) {
+        var $visitors = $(".leancloud_visitors");
+        var url = $visitors.attr('id').trim();
+        var title = $visitors.attr('data-flag-title').trim();
+        var query = new AV.Query(Counter);
+
+        query.equalTo("url", url);
+        query.find({
+            success: function (results) {
+                if (results.length > 0) {
+                    var counter = results[0];
+                    counter.fetchWhenSave(true);
+                    counter.increment("time");
+                    counter.save(null, {
+                        success: function (counter) {
+                            var $element = $(document.getElementById(url));
+                            $element.find('.leancloud-visitors-count').text(counter.get('time'));
+                        },
+                        error: function (counter, error) {
+                            console.log('Failed to save Visitor num, with error message: ' + error.message);
+                        }
+                    });
+                } else {
+                    var newcounter = new Counter();
+                    /* Set ACL */
+                    var acl = new AV.ACL();
+                    acl.setPublicReadAccess(true);
+                    acl.setPublicWriteAccess(true);
+                    newcounter.setACL(acl);
+                    /* End Set ACL */
+                    newcounter.set("title", title);
+                    newcounter.set("url", url);
+                    newcounter.set("time", 1);
+                    newcounter.save(null, {
+                        success: function (newcounter) {
+                            var $element = $(document.getElementById(url));
+                            $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+                        },
+                        error: function (newcounter, error) {
+                            console.log('Failed to create');
+                        }
+                    });
+                }
+        },
+    error: function(error) {
+        console.log('Error:' + error.code + " " + error.message);
+    }
+      });
+    }
+
+    $(function () {
+        var Counter = AV.Object.extend("Counter");
+        if ($('.leancloud_visitors').length == 1) {
+            addCount(Counter);
+        } else if ($('.post-title-link').length > 1) {
+            showTime(Counter);
+        }
+    });
+</script>
+
+</body>
+
+</html>
