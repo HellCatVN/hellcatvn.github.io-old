@@ -442,50 +442,6 @@
     <script src="/fancybox/jquery.fancybox.pack.js"></script>
   
 
-    <script>
-    $(document).ready(function () {
-      function share() {
-        if ($(".post-share").length) {
-          $(".post-share").share({
-            disabled: ['douban','diandian'],
-            wechatQrcodeTitle: "WeChat Scan",
-            wechatQrcodeHelper: "<p>WeChat scan, share in the upper right corner</p>",
-            source: "HellCatVN Blog"
-          });
-        }
-      }
-      share();
-    })    
-    </script>
-    <script>
-      $(function () {
-        $.ajax({
-          url: "../music.json",
-          success: function (e) {
-            const ap = new APlayer({
-              container: document.getElementById('aplayer'),
-              mini: true,
-              fixed: true,
-              autoplay: false,
-              loop: 'all',
-              order: 'random',
-              preload: 'auto',
-              volume: 0.7,
-              mutex: true,
-              listFolded: false,
-              listMaxHeight: '320px',
-              lrcType: 3,
-              music:e
-            });
-          }
-        })
-      })      
-    </script>
-    <script type="text/javascript">
-      $(document).ready(function () {
-        $(".fancybox").fancybox();
-      });
-    </script>  
 
 <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
 <script>AV.initialize("8yyK153myENY4PL4lfa4W4wc-gzGzoHsz", "IK2SaH7qCFqqvwNJhxkIyQnA");</script>
