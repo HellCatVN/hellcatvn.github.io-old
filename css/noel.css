@@ -56,8 +56,47 @@
 .b-ball_bounce .b-ball__right.bounce3+.b-ball__i { -webkit-transform:rotate(-1.5deg); -moz-transform:rotate(-1.5deg); -o-transform:rotate(-1.5deg); transform:rotate(-1.5deg); }
 #top_left{position:fixed;z-index:888;top:0;left:0}
 #top_right{position:fixed;z-index:888;top:0;right:0} 
+.santahat{
+    position: absolute;
+    top: -35px;
+    left: -2px;
+    height: 60px;
+    width: 70px;
+    padding-top: 10px;
+    border-radius: 100px;
+    color: #fff;
+    text-align: center;
+    line-height: 1.1;
+    -moz-transform:rotate(-20deg);
+    /* Safari and Chrome */
+    -webkit-transform:rotate(-20deg);
+    /* Opera */
+    -o-transform:rotate(-20deg);
+    /* IE9 */
+    -ms-transform:rotate(-20deg);
+}
 #hellcatsnow{
     position: fixed;
-    z-index:999;
-    top:0
+    top:0px;
+}
+.post-type-normal{
+    background: linear-gradient(white, white), linear-gradient(60deg, #ff3f1a 0%, #ff3f1a 3.5%, white 3.5%, white 7%, #ff3f1a 7%, #ff3f1a 10.5%, white 10.5%, white 14%, #ff3f1a 14%, #ff3f1a 17.5%, white 17.5%, white 21%, #ff3f1a 21%, #ff3f1a 25%, white 25%, white 28.5%, #ff3f1a 28.5%, #ff3f1a 32%, white 32%, white 35.5%, #ff3f1a 35.5%, #ff3f1a 39%, white 39%, white 42.5%, red 42.5%, red 46%, white 46%, white 50%, red 50%, red 53.5%, white 53.5%, white 57%, red 57%, red 60.5%, white 60.5%, white 64%, red 64%, red 67.5%, white 67.5%, white 71%, red 71%, red 75%, white 75%, white 78.5%, red 78.5%, red 82%, white 82%, white 85.5%, red 85.5%, red 89%, white 89%, white 92.5%, red 92.5%, red 96%, white 96%, white 100%);
+    padding: 10px 10px;
+    border-radius: 20px;
+    background-origin: content-box, padding-box;
+    background-clip: content-box, padding-box;
+    z-index: 1;
+}
+.post-block{
+    padding: 20px;
+}
+.sidebar-inner{
+    background: linear-gradient(white, white), linear-gradient(60deg, #ff3f1a 0%, #ff3f1a 3.5%, white 3.5%, white 7%, #ff3f1a 7%, #ff3f1a 10.5%, white 10.5%, white 14%, #ff3f1a 14%, #ff3f1a 17.5%, white 17.5%, white 21%, #ff3f1a 21%, #ff3f1a 25%, white 25%, white 28.5%, #ff3f1a 28.5%, #ff3f1a 32%, white 32%, white 35.5%, #ff3f1a 35.5%, #ff3f1a 39%, white 39%, white 42.5%, red 42.5%, red 46%, white 46%, white 50%, red 50%, red 53.5%, white 53.5%, white 57%, red 57%, red 60.5%, white 60.5%, white 64%, red 64%, red 67.5%, white 67.5%, white 71%, red 71%, red 75%, white 75%, white 78.5%, red 78.5%, red 82%, white 82%, white 85.5%, red 85.5%, red 89%, white 89%, white 92.5%, red 92.5%, red 96%, white 96%, white 100%);
+    padding: 10px 10px;
+    border-radius: 20px;
+    background-origin: content-box, padding-box;
+    background-clip: content-box, padding-box;    
+}
+#sidebar{
+    border-radius: 20px;
 }
